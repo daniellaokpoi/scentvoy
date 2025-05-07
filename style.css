@@ -1,0 +1,204 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+nav {
+  background-color: #f8f6f2;
+  position: fixed;
+}
+
+marquee {
+  display: block;
+}
+
+li {
+  list-style-type: none;
+}
+
+#mainNavbar {
+  transition: top 0.3s;
+}
+
+.navbar-hidden {
+  top: -80px;
+}
+
+h1 {
+  font-family: 'Playfair Display', serif;
+}
+
+p {
+  font-family: "Lora", serif;
+}
+
+.hero-section {
+  background-image: url(./img/hero\ image\ dior.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 100vh;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-bottom: 60px;
+}
+
+.hero-content {
+  z-index: 2;
+  padding-top: 230%;
+  text-align: center;
+  width: 100%;
+}
+
+.hero-btn {
+  background-color: transparent;
+  color: white;
+  border: 2px solid white;
+  border-radius: 30px;
+  padding: 12px 40px;
+  font-weight: 500;
+  font-size: 1rem;
+  display: inline-block;
+  transition: all 0.3s ease;
+  width: auto;
+  white-space: nowrap;
+}
+
+.hero-btn:hover {
+  background-color: rgba(255, 255, 255, 0.2); /* Subtle background color change */
+  color: #fdf9f7;
+  transform: translateY(-5px); /* Lift the button on hover */
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+}
+
+.hero-btn:focus {
+  outline: none; /* Remove focus outline */
+}
+
+/* Best Sellers Section */
+.sellers-sect {
+  background-color: whitesmoke; 
+  width: 100%;
+}
+
+/* Heading Style */
+.section-heading {
+  font-family: 'Playfair Display', serif;
+  font-size: 2.5rem;
+  color: #1a1a1a;
+  letter-spacing: 1px;
+}
+
+/* Carousel Image Styling */
+.carousel-img {
+  max-width: 300px;
+  width: 100%;
+  height: auto;
+  object-fit: contain;
+  margin: 0 auto;
+  border-radius: 12px;
+  transition: transform 0.4s ease;
+}
+
+.carousel-img:hover {
+  transform: scale(1.02);
+}
+
+/* Price Text Styling */
+.carousel-caption-custom {
+  margin-top: -2rem;
+  z-index: 2;
+  position: relative;
+}
+
+.product-price {
+  font-size: 1.2rem;
+  font-weight: 500;
+  color: #1a1a1a;
+  background-color: rgba(255, 255, 255, 0.13);
+  display: inline-block;
+  padding-bottom: 2rem;
+  border-radius: 2rem;
+  font-family: 'Poppins', sans-serif;
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  border-radius: 50%;
+  padding: 10px;
+}
+
+/* Shop by Category */
+.category-card {
+  transition: transform 0.3s ease;
+}
+
+.category-card:hover {
+  transform: scale(1.03);
+}
+
+.category-img {
+  height: 230px;
+  object-fit: cover;
+  filter: brightness(85%);
+  transition: filter 0.3s ease;
+}
+
+.category-card:hover .category-img {
+  filter: brightness(65%);
+}
+
+.overlay {
+  background: rgba(0, 0, 0, 0.3);
+  transition: background 0.3s ease, opacity 0.3s ease;
+  opacity: 0;
+}
+
+.category-card:hover .overlay {
+  opacity: 1;
+}
+
+.category-label {
+  background: rgba(0, 0, 0, 0.5);
+  font-size: 0.9rem;
+  letter-spacing: 1px;
+}
+
+#scent-quiz {
+  background: url('images/quiz-bg.jpg') no-repeat center center;
+  background-size: cover;
+  position: relative;
+  z-index: 1;
+}
+
+#scent-quiz::before {
+  content: "";
+  position: absolute;
+  top: 0; left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.6); /* soft black overlay */
+  z-index: -1;
+}
+
+li a {
+  text-decoration: none;
+  color: #333;
+}
+
+.account-sect {
+  background-color: #f8f6f2;
+}
+
+.sign-input {
+  padding: 0.5rem;
+  width: 25%;
+}
+
+.reset-pass {
+  color: black;
+}
+
