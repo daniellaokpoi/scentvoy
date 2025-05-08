@@ -184,6 +184,11 @@ p {
   z-index: -1;
 }
 
+.bi {
+  color: black;
+  margin-inline: 0.4rem;
+}
+
 li a {
   text-decoration: none;
   color: #333;
@@ -202,3 +207,49 @@ li a {
   color: black;
 }
 
+.reg-main {
+  background-color: #f8f6f2;
+}
+
+.form-info {
+  border: 2px solid white;
+  margin: auto;
+  background-color: white;
+  width: 50%;
+}
+
+.reg-email {
+  width: 97%;
+}
+
+.reg-date, .reg-pass {
+  width: 94%;
+}
+
+.reg-phone {
+  width: 55.5%;
+}
+
+.parent-dob {
+  margin: 0.9rem 1.9rem  !important;
+  width:93%;
+}
+
+::placeholder {
+  color: rgba(128, 128, 128, 0.505) !important;
+  
+}
+
+.inpt-dob {
+  outline: none !important;
+  width: 100% !important;
+}
+
+.country-code {
+  outline: none;
+}
+
+.reg-footer {
+  background-color: #f8f6f2;
+  
+}
