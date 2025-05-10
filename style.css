@@ -33,6 +33,25 @@ p {
   font-family: "Lora", serif;
 }
 
+#shop-drop {
+  background-color: #f8f6f2;
+  display: none;
+  width: 100vw;
+  left: 0;
+  top: 100%;
+  z-index: 1050; /* above other elements */
+}
+
+.nav-item:hover #shop-drop {
+  display: flex !important;
+}
+
+.dropdown-img {
+  height: 150px;
+  width: 100%;
+  object-fit: cover;
+}
+
 .hero-section {
   background-image: url(./img/hero\ image\ dior.jpg);
   background-size: cover;
