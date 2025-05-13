@@ -18,9 +18,7 @@
   <!-- Google Font -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link
-    href="https://fonts.googleapis.com/css2?family=Baskervville:ital@0;1&family=Crimson+Text:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&family=Lora:ital,wght@0,400..700;1,400..700&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Pacifico&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Sarabun:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800&family=Source+Sans+3:ital,wght@0,200..900;1,200..900&display=swap"
-    rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Alex+Brush&family=Baskervville:ital@0;1&family=Crimson+Text:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&family=Lora:ital,wght@0,400..700;1,400..700&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Pacifico&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Sarabun:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800&family=Source+Sans+3:ital,wght@0,200..900;1,200..900&display=swap" rel="stylesheet">
 </head>
 
 <body>
@@ -122,7 +120,7 @@
                     <li>Patchouli</li>
                     <li>Rose</li>
                     <li>Sandalwood</li>
-                    <a href="vanilla.html" class="text-dark" style="text-decoration: none;">Vanilla</a><li></li>
+                    <li>Vanilla</li>
                   </ul>
                 </div>
               </div>
@@ -188,143 +186,96 @@
     <input type="text" id="searchBox" class="form-control" placeholder="Search perfumes..." onkeyup="filterPerfumes()">
   </div>
 
-  <!-- Hero section -->
-  <section class="container-fluid hero-section">
-    <div class="row justify-content-center">
-      <div class="col-10 col-md-8 text-center hero-content">
-        <a href="#quiz" class="btn hero-btn mt-3">Find Your Scent</a>
-      </div>
+  <section class="vanilla-hero d-flex align-items-center justify-content-center text-center">
+  <h1 class="text-light vanilla-text display-1">Vanilla, Reimagined</h1>
+  </section>
+
+  <section class="hero text-center">
+    <div class="container mt-5">
+      <h1>Shop Vanilla Perfumes</h1>
+      <p class="lead">Warm, nostalgic, and unforgettable—find your signature vanilla scent.</p>
     </div>
   </section>
 
-  <!-- Best Sellers Section -->
-  <section class="sellers-sect py-5">
-    <div class="container text-center">
-      <h2 class="section-heading fw-bold mb-5">BEST SELLERS</h2>
-      <p class="fs-5 text-muted">Hand-picked by thousands of fragrance lovers just like you.</p>
-
-      <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
-        <div class="carousel-indicators">
-          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
-            aria-current="true" aria-label="Slide 1"></button>
-          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
-            aria-label="Slide 2"></button>
-          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
-            aria-label="Slide 3"></button>
-        </div>
-
-        <div class="carousel-inner">
-          <div class="carousel-item active">
-            <img src="./img/ysl_transparent-removebg-preview.png" class="d-block carousel-img rounded" alt="YSL perfume"
-              loading="lazy">
-            <div class="carousel-caption-custom">
-              <p class="product-price">$165.00</p>
-            </div>
-          </div>
-
-          <div class="carousel-item">
-            <img src="./img/zara_perfume-removebg-preview.png" class="d-block carousel-img rounded" alt="Zara perfume"
-              loading="lazy">
-            <div class="carousel-caption-custom">
-              <p class="product-price">$230.00</p>
-            </div>
-          </div>
-
-          <div class="carousel-item">
-            <img src="./img/versace_eros-removebg-preview.png" class="d-block carousel-img rounded" alt="Versace Eros"
-              loading="lazy">
-            <div class="carousel-caption-custom">
-              <p class="product-price">$138.00</p>
-            </div>
-          </div>
-        </div>
-
-        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions"
-          data-bs-slide="prev">
-          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Previous</span>
-        </button>
-        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions"
-          data-bs-slide="next">
-          <span class="carousel-control-next-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Next</span>
-        </button>
-      </div>
-    </div>
-  </section>
-
-  <!-- Category Section -->
-  <section class="py-5 bg-light" id="categories">
-    <div class="container text-center">
-      <h2 class="mb-4 fw-semibold">Shop by Category</h2>
-      <div class="row justify-content-center g-4">
-
-        <!-- Category Card -->
-        <div class="col-6 col-sm-4 col-md-3 col-lg-2">
-          <div class="position-relative rounded overflow-hidden shadow-sm category-card">
-            <img src="./img/diptyque.jpg" alt="For Her" class="img-fluid w-100 category-img">
-            <div
-              class="category-label position-absolute bottom-0 start-0 w-100 text-white py-2 px-2 text-uppercase fw-semibold">
-              For Her
-            </div>
-          </div>
-        </div>
-
-        <!-- Repeat Cards -->
-        <div class="col-6 col-sm-4 col-md-3 col-lg-2">
-          <div class="position-relative rounded overflow-hidden shadow-sm category-card">
-            <img src="./img/le labo masc.jpg" alt="For Him" class="img-fluid w-100 category-img">
-            <div
-              class="category-label position-absolute bottom-0 start-0 w-100 text-white py-2 px-2 text-uppercase fw-semibold">
-              For Him
-            </div>
-          </div>
-        </div>
-
-        <div class="col-6 col-sm-4 col-md-3 col-lg-2">
-          <div class="position-relative rounded overflow-hidden shadow-sm category-card">
-            <img src="./img/acqua di gio.jpg" alt="Unisex" class="img-fluid w-100 category-img">
-            <div
-              class="category-label position-absolute bottom-0 start-0 w-100 text-white py-2 px-2 text-uppercase fw-semibold">
-              Unisex
-            </div>
-          </div>
-        </div>
-
-        <div class="col-6 col-sm-4 col-md-3 col-lg-2">
-          <div class="position-relative rounded overflow-hidden shadow-sm category-card">
-            <img src="./img/ysl perfume.jpg" alt="Luxury" class="img-fluid w-100 category-img">
-            <div
-              class="category-label position-absolute bottom-0 start-0 w-100 text-white py-2 px-2 text-uppercase fw-semibold">
-              Luxury
-            </div>
-          </div>
-        </div>
-
-        <div class="col-6 col-sm-4 col-md-3 col-lg-2">
-          <div class="position-relative rounded overflow-hidden shadow-sm category-card">
-            <img src="./img/travel size minis.jpg" alt="Travel Size" class="img-fluid w-100 category-img">
-            <div
-              class="category-label position-absolute bottom-0 start-0 w-100 text-white py-2 px-2 text-uppercase fw-semibold">
-              Travel Size
-            </div>
-          </div>
-        </div>
-
-      </div>
-    </div>
-  </section>
-
-
-
-  <!-- Find Your Scent Quiz -->
-  <section class="py-5 text-center bg-dark text-white mt-5" id="scent-quiz">
+  <!-- PRODUCTS -->
+  <section class="py-5">
     <div class="container">
-      <h2 class="mb-3">Not Sure Where to Start?</h2>
-      <p class="mb-4 lead">Take our 60-second quiz to find your signature scent.</p>
-      <a href="#!" class="btn btn-outline-light btn-lg rounded-pill px-4">Take the Quiz</a>
+      <div class="row justify-content-center">
+        
+        <!-- Product 1 -->
+        <div class="col-md-4 product mt-4">
+            <a href="burberry.html"><img src="./img/burberry-goddess-removebg-preview.png" class="product-img kayali" alt="Vanilla Elixir"></a>
+              <h5 class="card-title">Burberry Goddess</h5>
+              <p class="fw-bold">$105.00</p>
+          </div>
+
+        <!-- Product 2 -->
+        <div class="col-md-4 product mt-3">
+            <img src="./img/eilish-perfume.jpg" class="product-img" alt="Golden Vanilla">
+              <h5 class="card-title">Eilish Eau de Parfum</h5>
+              <p class="fw-bold">$78.00</p>
+            </div>
+
+        <!-- Product 3 -->
+        <div class="col-md-4 product">
+            <img src="./img/tom-ford-tobacco-vanille.jpg" class="product-img" alt="Velvet Vanilla" width="150">
+              <h5 class="card-title">Tom Ford Tobacco Vanille</h5>
+              <p class="fw-bold">Starting from $400.00</p>
+        </div>
+
+        <!-- Product 4 -->
+        <div class="col-md-4 product">
+          <img src="./img/phlur vanilla.jpg" class="product-img" alt="Velvet Vanilla" width="150">
+            <h5 class="card-title">Phlur Vanilla Skin</h5>
+            <p class="fw-bold">$38.00</p>
+      </div>
+
+      <!-- Product 5 -->
+      <div class="col-md-4 product">
+        <img src="./img/alien-goddess.jpg" class="product-img" alt="Velvet Vanilla" width="150">
+          <h5 class="card-title">Alien Goddess Mugler</h5>
+          <p class="fw-bold">$36.00</p>
+    </div>
+
+    <!-- Product 6 -->
+    <div class="col-md-4 product mt-3">
+      <img src="./img/vanille-antique.jpg" class="product-img" alt="Velvet Vanilla" width="150">
+        <h5 class="card-title">Byredo Vanille Antique</h5>
+        <p class="fw-bold">$324.00</p>
+  </div>
+
+  <!-- Product 7 -->
+  <div class="col-md-4 product mt-3">
+    <img src="./img/tom-ford-vanille-fatale.jpg" class="product-img" alt="Velvet Vanilla" width="150">
+      <h5 class="card-title">Tom Ford Vanille Fatale</h5>
+      <p class="fw-bold">$405.00</p>
+</div>
+
+<!-- Product 8 -->
+<div class="col-md-4 product mt-3">
+  <img src="./img/hypnotic-poison.jpg" class="product-img" alt="Velvet Vanilla" width="150">
+    <h5 class="card-title">Dior Hypnotic Poison</h5>
+    <p class="fw-bold">$145.00</p>
+</div>
+
+<!-- Product 9 -->
+<div class="col-md-4 product mt-3">
+  <img src="./img/jo-malone-vetiver.jpg" class="product-img" alt="Velvet Vanilla" width="150">
+    <h5 class="card-title">Jo Malone Vetiver and Golden Vanilla</h5>
+    <p class="fw-bold">$176.00</p>
+</div>
+
+<!-- Product 10 -->
+<div class="col-md-4 product mt-3">
+  <img src="./img/kayali 28.jpg" class="product-img" alt="Velvet Vanilla" width="150">
+    <h5 class="card-title">Kayali Vanilla 28</h5>
+    <p class="fw-bold">$138.00</p>
+</div>
+
+      </div>
     </div>
   </section>
+
 
   <footer class="footer mt-5">
     <div class="container">
