@@ -120,7 +120,7 @@
                     <li>Patchouli</li>
                     <li>Rose</li>
                     <li>Sandalwood</li>
-                    <li>Vanilla</li>
+                    <a href="vanilla.html">Vanilla</a><li></li>
                   </ul>
                 </div>
               </div>
@@ -186,96 +186,93 @@
     <input type="text" id="searchBox" class="form-control" placeholder="Search perfumes..." onkeyup="filterPerfumes()">
   </div>
 
-  <section class="vanilla-hero d-flex align-items-center justify-content-center text-center">
-  <h1 class="text-light vanilla-text display-1">Vanilla, Reimagined</h1>
-  </section>
 
-  <section class="hero text-center">
-    <div class="container mt-5">
-      <h1>Shop Vanilla Perfumes</h1>
-      <p class="lead">Warm, nostalgic, and unforgettable—find your signature vanilla scent.</p>
-    </div>
-  </section>
+  <main data-bs-spy="scroll" data-bs-target="#product-nav" data-bs-offset="100" tabindex="0">
 
-  <!-- PRODUCTS -->
-  <section class="py-5">
-    <div class="container">
-      <div class="row justify-content-center">
-        
-        <!-- Product 1 -->
-        <div class="col-md-4 product mt-4">
-            <a href="burberry.html"><img src="./img/burberry-goddess-removebg-preview.png" class="product-img kayali" alt="Vanilla Elixir"></a>
-              <h5 class="card-title">Burberry Goddess</h5>
-              <p class="fw-bold">$105.00</p>
-          </div>
-
-        <!-- Product 2 -->
-        <div class="col-md-4 product mt-3">
-            <a href="eilish.html"><img src="./img/eilish-perfume.jpg" class="product-img" alt="Golden Vanilla"></a>
-              <h5 class="card-title">Eilish Eau de Parfum</h5>
-              <p class="fw-bold">$78.00</p>
-            </div>
-
-        <!-- Product 3 -->
-        <div class="col-md-4 product">
-            <a href="tomtobacco.html"><img src="./img/tom-ford-tobacco-vanille.jpg" class="product-img" alt="Velvet Vanilla" width="150"></a>
-              <h5 class="card-title">Tom Ford Tobacco Vanille</h5>
-              <p class="fw-bold">$400.00</p>
+    <!-- Sticky Scrollspy Nav -->
+    <nav id="product-nav" class="navbar navbar-expand-lg navbar-light bg-light sticky-top shadow-sm">
+      <div class="container">
+        <a class="navbar-brand" href="mugler.html">Alien Goddess Mugler</a>
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link" href="#description">Description</a></li>
+          <li class="nav-item"><a class="nav-link" href="#notes">Scent Notes</a></li>
+          <li class="nav-item"><a class="nav-link" href="#details">Details</a></li>
+        </ul>
+      </div>
+    </nav>
+    
+    <!-- Product Overview -->
+    <section class="container my-5" id="description">
+      <div class="row">
+        <div class="col-md-6">
+          <img src="./img/alien-goddess.jpg" alt="Alien Goddess Mugler" class="img-fluid product-img ms-5">
         </div>
-
-        <!-- Product 4 -->
-        <div class="col-md-4 product">
-         <a href="phlur.html"><img src="./img/phlur vanilla.jpg" class="product-img" alt="Velvet Vanilla" width="150"></a>
-            <h5 class="card-title">Phlur Vanilla Skin</h5>
-            <p class="fw-bold">$38.00</p>
+        <div class="col-md-6">
+          <h2 class="fw-bold">Alien Goddess Mugler</h2>
+          <p class="text-muted fs-4 mb-1">$185.00</p>
+          <p class="lead">Sun-kissed perfume with jasmine & vanilla.</p>
+    
+          <!-- Quantity Selector -->
+          <div class="d-flex align-items-center my-3">
+            <label class="me-2 fw-semibold">Quantity:</label>
+            <input type="number" class="form-control w-25" min="1" value="1">
+          </div>
+    
+          <!-- Buttons -->
+          <div class="d-flex gap-3">
+            <button class="btn btn-dark">Add to Cart</button>
+            <button class="btn btn-outline-dark">♡ Wishlist</button>
+          </div>
+        </div>
       </div>
-
-      <!-- Product 5 -->
-      <div class="col-md-4 product">
-        <a href="mugler.html"><img src="./img/alien-goddess.jpg" class="product-img" alt="Velvet Vanilla" width="150"></a>
-          <h5 class="card-title">Alien Goddess Mugler</h5>
-          <p class="fw-bold">$185.00</p>
-    </div>
-
-    <!-- Product 6 -->
-    <div class="col-md-4 product mt-3">
-      <a href="byredovanille.html"><img src="./img/vanille-antique.jpg" class="product-img" alt="Velvet Vanilla" width="150"></a>
-        <h5 class="card-title">Byredo Vanille Antique</h5>
-        <p class="fw-bold">$324.00</p>
-  </div>
-
-  <!-- Product 7 -->
-  <div class="col-md-4 product mt-3">
-    <a href="vanillefatale.html"><img src="./img/tom-ford-vanille-fatale.jpg" class="product-img" alt="Velvet Vanilla" width="150"></a>
-      <h5 class="card-title">Tom Ford Vanille Fatale</h5>
-      <p class="fw-bold">$405.00</p>
-</div>
-
-<!-- Product 8 -->
-<div class="col-md-4 product mt-3">
-  <a href="diorpoison.html"><img src="./img/hypnotic-poison.jpg" class="product-img" alt="Velvet Vanilla" width="150"></a>
-    <h5 class="card-title">Dior Hypnotic Poison</h5>
-    <p class="fw-bold">$145.00</p>
-</div>
-
-<!-- Product 9 -->
-<div class="col-md-4 product mt-3">
-  <a href="vetiver.html"><img src="./img/jo-malone-vetiver.jpg" class="product-img" alt="Velvet Vanilla" width="150"></a>
-    <h5 class="card-title">Jo Malone Vetiver and Golden Vanilla</h5>
-    <p class="fw-bold">$176.00</p>
-</div>
-
-<!-- Product 10 -->
-<div class="col-md-4 product mt-3">
-  <a href="kayali28.html"><img src="./img/kayali 28.jpg" class="product-img" alt="Velvet Vanilla" width="150"></a>
-    <h5 class="card-title">Kayali Vanilla 28</h5>
-    <p class="fw-bold">$138.00</p>
-</div>
-
+    </section>
+    
+    <!-- Scent Notes -->
+    <section class="container my-5" id="notes">
+      <h3 class="mb-3">Scent Notes</h3>
+      <ul class="list-group list-group-flush fs-5">
+        <li class="list-group-item"><strong>Top:</strong> Coconut Water, Bergamot</li>
+        <li class="list-group-item"><strong>Heart:</strong> Jasmine, Heliotrope</li>
+        <li class="list-group-item"><strong>Base:</strong> Bourbon Vanilla, Cashmeran</li>
+      </ul>
+    </section>
+    
+    <!-- Details -->
+    <section class="container my-5" id="details">
+      <h3 class="mb-3">Product Details</h3>
+      <p class="fs-5">
+        - Eau de Parfum 90ml <br>
+        - Long-lasting wear  <br>
+        - Vegan, cruelty-free, and paraben-free  <br>
+      </p>
+    </section>
+    
+    <!-- Related Products -->
+    <section class="container my-5">
+      <h4 class="mb-4">Explore More in Vanilla</h4>
+      <div class="row g-4">
+        <div class="col-md-3 col-sm-6 d-flex flex-column align-items-center mt-5">
+          <a href="byredovanille.html"><img src="./img/vanille-antique.jpg" class="img-fluid product-img" alt="Byredo Vanille Antique"></a>
+          <p class="text-center mt-2">Byredo Vanille Antique</p>
+        </div>
+        <div class="col-md-3 col-sm-6 d-flex flex-column align-items-center">
+          <a href="vetiver.html"><img src="./img/jo-malone-vetiver.jpg" class="img-fluid product-img ms-1" alt="Amber Vanilla"></a>
+          <p class="text-center mt-2">Jo Malone Vetiver and Golden Vanilla</p>
+        </div>
+        <div class="col-md-3 col-sm-6 d-flex flex-column align-items-center">
+          <a href="phlur.html"><img src="./img/phlur vanilla.jpg" class="img-fluid product-img ms-1" alt="Amber Vanilla"></a>
+          <p class="text-center mt-2">Phlur Vanilla Skin</p>
+        </div>
+        <div class="col-md-3 col-sm-6 d-flex flex-column align-items-center mt-5">
+          <a href="diorpoison.html"><img src="./img/hypnotic-poison.jpg" class="img-fluid product-img ms-1" alt="Amber Vanilla"></a>
+          <p class="text-center mt-2">Dior Hypnotic Poison</p>
+        </div>
+        <!-- Add more as needed -->
       </div>
-    </div>
-  </section>
-
+    </section>
+    
+  </main>
+    
 
   <footer class="footer mt-5">
     <div class="container">
