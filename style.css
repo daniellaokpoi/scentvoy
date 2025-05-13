@@ -270,5 +270,65 @@ li a {
 
 .reg-footer {
   background-color: #f8f6f2;
-  
+}
+
+.about-hero {
+  background-image: url(./img/about-perfume.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 100vh;
+  width: 100%;
+}
+
+.about-text {
+  font-family: 'Playfair Display', serif;
+}
+
+.discover-btn {
+  background-color: transparent;
+  color: white;
+  border: 2px solid white;
+  padding: 0.75rem 1.5rem;
+  border-radius: 30px;
+  font-size: 1rem;
+  font-weight: 500;
+  transition: all 0.3s ease;
+}
+
+.discover-btn:hover {
+  background-color: white;
+  color: #000; /* or use a brand color like navy or charcoal if preferred */
+  border-color: white;
+  text-decoration: none;
+}
+
+.custom-cta {
+  background-color: #D8A7B1;
+  color: #fff;
+  border: none;
+  padding: 0.75rem 1.5rem;
+  font-weight: 500;
+  letter-spacing: 0.5px;
+  transition: all 0.3s ease;
+  border-radius: 0.5rem;
+}
+
+.custom-cta:hover {
+  background-color: #c58f9b;
+  color: #fff;
+  transform: scale(1.03);
+}
+
+.note-story, .founder-name {
+  font-family: "Alex Brush", cursive;
+}
+
+.founder-section {
+  background-image: url(./img/founder-bg.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center top;
+  height: 100vh;
+  width: 100%;
 }
