@@ -401,3 +401,12 @@ li a {
   height: 100vh;
   width: 100%;
 }
+
+.jasmine-hero {
+  background-image: url(./img/jasmine-hero.jpg);
+  background-position: center bottom;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
+  width: 100%;
+}

@@ -111,16 +111,16 @@
                   <p class="fw-bold">Shop By Ingredient</p>
                   <ul>
                     <li>Discover All</li>
-                    <a href="amber.html" class="text-dark" style="text-decoration: none;">Amber</a><li></li>
-                    <a href="citrus.html">Citrus</a><li></li>
-                    <a href="coconut.html">Coconut</a><li></li>
-                    <a href="jasmine.html">Jasmine</a><li></li>
+                    <a href="amber.html">Amber</a><li></li>
+                    <li>Citrus</li>
+                    <li>Coconut</li>
+                    <li>Jasmine</li>
                     <li>Lavender</li>
                     <li>Musk</li>
                     <li>Patchouli</li>
                     <li>Rose</li>
                     <li>Sandalwood</li>
-                    <a href="vanilla.html" class="text-dark" style="text-decoration: none;">Vanilla</a><li></li>
+                    <a href="vanilla.html">Vanilla</a><li></li>
                   </ul>
                 </div>
               </div>
@@ -186,88 +186,92 @@
     <input type="text" id="searchBox" class="form-control" placeholder="Search perfumes..." onkeyup="filterPerfumes()">
   </div>
 
-  <section class="coconut-hero d-flex align-items-center justify-content-center text-center">
-  </section>
 
-  <section class="hero text-center">
-    <div class="container mt-5">
-      <h1>Shop Coconut Perfumes</h1>
-      <p class="lead">Tropical, creamy and comforting — coconut perfumes whisk you away to sunlit shores.</p>
-    </div>
-  </section>
+  <main data-bs-spy="scroll" data-bs-target="#product-nav" data-bs-offset="100" tabindex="0">
 
-  <!-- PRODUCTS -->
-  <section class="py-5">
-    <div class="container">
-      <div class="row justify-content-center">
-        
-        <!-- Product 1 -->
-        <div class="col-md-4 product mt-4">
-            <a href="crystalnoir.html"><img src="./img/crystalnoir.jpg" class="product-img kayali" alt="Crystal Noir"></a>
-              <h5 class="card-title">Versace Crystal Noir</h5>
-              <p class="fw-bold">$107.00</p>
-          </div>
-
-        <!-- Product 2 -->
-        <div class="col-md-4 product mt-3">
-            <a href="beachwalk.html"><img src="./img/beachwalk.jpg" class="product-img" alt="beachwalk"></a>
-              <h5 class="card-title">Maison Margiela Beach Walk</h5>
-              <p class="fw-bold">$132.00</p>
-            </div>
-
-        <!-- Product 3 -->
-        <div class="col-md-4 product mt-5">
-            <a href="coconutsun.html"><img src="./img/coconutsun.jpg" class="product-img" alt="Coconut Sun" width="150"></a>
-              <h5 class="card-title">The 7 Virtues Coconut Sun</h5>
-              <p class="fw-bold">$94.00</p>
+    <!-- Sticky Scrollspy Nav -->
+    <nav id="product-nav" class="navbar navbar-expand-lg navbar-light bg-light sticky-top shadow-sm">
+      <div class="container">
+        <a class="navbar-brand" href="jomalonejasmine.html">Jo Malone White Jasmine & Mint</a>
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link" href="#description">Description</a></li>
+          <li class="nav-item"><a class="nav-link" href="#notes">Scent Notes</a></li>
+          <li class="nav-item"><a class="nav-link" href="#details">Details</a></li>
+        </ul>
+      </div>
+    </nav>
+    
+    <!-- Product Overview -->
+    <section class="container my-5" id="description">
+      <div class="row">
+        <div class="col-md-6">
+          <img src="./img/jo-malone-jasmine.jpg" alt="jo-malone-jasmine" class="img-fluid product-img ms-5">
         </div>
-
-        <!-- Product 4 -->
-        <div class="col-md-4 product">
-         <a href="coconutcove.html"><img src="./img/coconutcove.jpg" class="product-img" alt="coconutcove" width="150"></a>
-            <h5 class="card-title">Skylar Coconut Cove</h5>
-            <p class="fw-bold">$72.00</p>
+        <div class="col-md-6">
+          <h2 class="fw-bold">Jo Malone White Jasmine & Mint Cologne</h2>
+          <p class="text-muted fs-4 mb-1">$190.00</p>
+          <p class="lead"> A sun-drenched morning in an English country garden. Just-crushed wild mint adds a dash of eccentricity to an exuberant bouquet of jasmine, lily, orange flower and rose. </p>
+          <!-- Quantity Selector -->
+          <div class="d-flex align-items-center my-3">
+            <label class="me-2 fw-semibold">Quantity:</label>
+            <input type="number" class="form-control w-25" min="1" value="1">
+          </div>
+    
+          <!-- Buttons -->
+          <div class="d-flex gap-3">
+            <button class="btn btn-dark">Add to Cart</button>
+            <button class="btn btn-outline-dark">♡ Wishlist</button>
+          </div>
+        </div>
       </div>
-
-      <!-- Product 5 -->
-      <div class="col-md-4 product">
-        <a href="kayaliutopia.html"><img src="./img/kayaliutopia.jpg" class="product-img" alt="kayaliutopia" width="150"></a>
-          <h5 class="card-title">Kayali Utopia Vanilla Coco/h5>
-          <p class="fw-bold">$138.00</p>
-    </div>
-
-    <!-- Product 6 -->
-    <div class="col-md-4 product mt-3">
-      <a href="soleilblanc.html"><img src="./img/soleil-blanc.jpg" class="product-img" alt="Soleil Blanc" width="150"></a>
-        <h5 class="card-title">Tom Ford Soleil Blanc</h5>
-        <p class="fw-bold">$94.00</p>
-  </div>
-
-  <!-- Product 7 -->
-  <div class="col-md-4 product mt-3">
-    <a href="cocoshimmy.html"><img src="./img/coco-shimmy.jpg" class="product-img" alt="coco-shimmy" width="150"></a>
-      <h5 class="card-title">Snif Coco Shimmy</h5>
-      <p class="fw-bold">$65.00</p>
-</div>
-
-<!-- Product 8 -->
-<div class="col-md-4 product mt-3">
-  <a href="sunnysideup.html"><img src="./img/sunnysideup.jpg" class="product-img" alt="Sunny Side Up" width="150"></a>
-    <h5 class="card-title">Sunny Side Up</h5>
-    <p class="fw-bold">$150.00</p>
-</div>
-
-<!-- Product 9 -->
-<div class="col-md-4 product mt-3">
-  <a href="bronzegoddess.html"><img src="./img/bronzegoddess.jpg" class="product-img" alt="bronzegoddess" width="150"></a>
-    <h5 class="card-title">Estée Lauder Bronze Goddess</h5>
-    <p class="fw-bold">$90.00</p>
-</div>
-
+    </section>
+    
+    <!-- Scent Notes -->
+    <section class="container my-5" id="notes">
+      <h3 class="mb-3">Scent Notes</h3>
+      <ul class="list-group list-group-flush fs-5">
+        <li class="list-group-item"><strong>Top:</strong> Mint, Bergamot, Chamomile, Coriander, Cardamom, Black Currant</li>
+        <li class="list-group-item"><strong>Heart:</strong> Jasmine, Orange Blossom, Lily-of-the-Valley, Ylang-Ylang, May Rose </li>
+        <li class="list-group-item"><strong>Base:</strong> Tea, Vetiver, Cedar, Musk, Dried Plum, Guaiac Wood</li>
+      </ul>
+    </section>
+    
+    <!-- Details -->
+    <section class="container my-5" id="details">
+      <h3 class="mb-3">Product Details</h3>
+      <p class="fs-5">
+        - Eau de Parfum 100ml <br>
+        - Long-lasting wear  <br>
+        - Vegan, cruelty-free, and paraben-free  <br>
+      </p>
+    </section>
+    
+    <!-- Related Products -->
+    <section class="container my-5">
+      <h4 class="mb-4">Explore More in Coconut</h4>
+      <div class="row g-4">
+        <div class="col-md-3 col-sm-6 d-flex flex-column align-items-center">
+          <a href="jasmin17.html"><img src="./img/jasmin-17.jpg" class="img-fluid product-img" alt="jasmin-17"></a>
+          <p class="text-center mt-2">Le Labo Jasmin 17 </p>
+        </div>
+        <div class="col-md-3 col-sm-6 d-flex flex-column align-items-center mt-5">
+          <a href="j'adored'eau.html"><img src="./img/j'adore-d'eau.jpg" class="img-fluid product-img ms-1" alt="j'adore d'eau">
+          <p class="text-center mt-2">J'Adore Parfum D'Eau</p>
+        </div>
+        <div class="col-md-3 col-sm-6 d-flex flex-column align-items-center mt-5">
+          <a href="loewe001.html"><img src="./img/loewe-001.jpg" class="img-fluid product-img ms-1" alt="loewe-001"></a>
+          <p class="text-center mt-2">Loewe 001 Woman</p>
+        </div>
+        <div class="col-md-3 col-sm-6 d-flex flex-column align-items-center mt-5">
+          <a href="jasminumsambac.html"><img src="./img/jasminum-sambac.jpg" class="img-fluid product-img ms-1" alt="jasminum-sambac">
+          <p class="text-center mt-2">Chloé Jasminum Sambac</p>
+        </div>
+        <!-- Add more as needed -->
       </div>
-    </div>
-  </section>
-
+    </section>
+    
+  </main>
+    
 
   <footer class="footer mt-5">
     <div class="container">
