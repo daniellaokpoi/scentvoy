@@ -111,16 +111,16 @@
                   <p class="fw-bold">Shop By Ingredient</p>
                   <ul>
                     <li>Discover All</li>
-                    <a href="amber.html">Amber</a><li></li>
-                    <li>Citrus</li>
-                    <li>Coconut</li>
-                    <li>Jasmine</li>
-                    <li>Lavender</li>
-                    <li>Musk</li>
+                    <a href="amber.html" class="text-dark" style="text-decoration: none;">Amber</a><li></li>
+                    <a href="citrus.html">Citrus</a><li></li>
+                    <a href="coconut.html">Coconut</a><li></li>
+                    <a href="jasmine.html">Jasmine</a><li></li>
+                    <a href="lavender.html">Lavender</a><li></li>
+                    <a href="musk.html">Musk</a><li></li>
                     <li>Patchouli</li>
                     <li>Rose</li>
                     <li>Sandalwood</li>
-                    <a href="vanilla.html">Vanilla</a><li></li>
+                    <a href="vanilla.html" class="text-dark" style="text-decoration: none;">Vanilla</a><li></li>
                   </ul>
                 </div>
               </div>
@@ -186,92 +186,88 @@
     <input type="text" id="searchBox" class="form-control" placeholder="Search perfumes..." onkeyup="filterPerfumes()">
   </div>
 
+  <section class="musk-hero d-flex align-items-center justify-content-center text-center">
+  </section>
 
-  <main data-bs-spy="scroll" data-bs-target="#product-nav" data-bs-offset="100" tabindex="0">
+  <section class="hero text-center">
+    <div class="container mt-5">
+      <h1>Shop Musk Perfumes</h1>
+      <p class="lead">Soft, sensual, and skin-like — musk perfumes have a lingering, intimate trail.</p>
+    </div>
+  </section>
 
-    <!-- Sticky Scrollspy Nav -->
-    <nav id="product-nav" class="navbar navbar-expand-lg navbar-light bg-light sticky-top shadow-sm">
-      <div class="container">
-        <a class="navbar-brand" href="greenstravaganza.html">Valentino Green Stravaganza</a>
-        <ul class="navbar-nav ms-auto">
-          <li class="nav-item"><a class="nav-link" href="#description">Description</a></li>
-          <li class="nav-item"><a class="nav-link" href="#notes">Scent Notes</a></li>
-          <li class="nav-item"><a class="nav-link" href="#details">Details</a></li>
-        </ul>
-      </div>
-    </nav>
-    
-    <!-- Product Overview -->
-    <section class="container my-5" id="description">
-      <div class="row">
-        <div class="col-md-6">
-          <img src="./img/greenvalentino.jpg" alt="green valentino" class="img-fluid product-img ms-5">
-        </div>
-        <div class="col-md-6">
-          <h2 class="fw-bold">Valentino Green Stravaganza</h2>
-          <p class="text-muted fs-4 mb-1">$170.00</p>
-          <p class="lead"> Born in Roma Green Stravaganza is a floral-ambery woody fragrance, created by the extravagant blends of sensual Lapsang Souchong tea accord and opulent jasmine absolute. </p>
-          <!-- Quantity Selector -->
-          <div class="d-flex align-items-center my-3">
-            <label class="me-2 fw-semibold">Quantity:</label>
-            <input type="number" class="form-control w-25" min="1" value="1">
+  <!-- PRODUCTS -->
+  <section class="py-5">
+    <div class="container">
+      <div class="row justify-content-center">
+        
+        <!-- Product 1 -->
+        <div class="col-md-4 product mt-4">
+            <a href="kayalimusk.html"><img src="./img/kayalimusk.jpg" class="product-img kayali" alt="kayalimusk"></a>
+              <h5 class="card-title">Kayali Musk 12</h5>
+              <p class="fw-bold">$132.00</p>
           </div>
-    
-          <!-- Buttons -->
-          <div class="d-flex gap-3">
-            <button class="btn btn-dark">Add to Cart</button>
-            <button class="btn btn-outline-dark">♡ Wishlist</button>
-          </div>
+
+        <!-- Product 2 -->
+        <div class="col-md-4 product mt-3">
+            <a href="lazysunday.html"><img src="./img/lazysunday.jpg" class="product-img" alt="lazysunday"></a>
+              <h5 class="card-title">Maison Margiela Lazy Sunday Morning</h5>
+              <p class="fw-bold">$132.00</p>
+            </div>
+
+        <!-- Product 3 -->
+        <div class="col-md-4 product mt-5">
+            <a href="puremusc.html"><img src="./img/pure-musc.jpg" class="product-img" alt="pure-musc" width="150"></a>
+              <h5 class="card-title">Narciso Rodriguez Pure Musc for Her</h5>
+              <p class="fw-bold">$93.00</p>
         </div>
+
+        <!-- Product 4 -->
+        <div class="col-md-4 product">
+         <a href="etvoila.html"><img src="./img/et-voila.jpg" class="product-img" alt="et-voila" width="150"></a>
+            <h5 class="card-title">Et Voilà Teo Cabanel</h5>
+            <p class="fw-bold">$120.00</p>
       </div>
-    </section>
-    
-    <!-- Scent Notes -->
-    <section class="container my-5" id="notes">
-      <h3 class="mb-3">Scent Notes</h3>
-      <ul class="list-group list-group-flush fs-5">
-        <li class="list-group-item"><strong>Top:</strong> Lapsang Gouchong Tea</li>
-        <li class="list-group-item"><strong>Heart:</strong> Jasmine Absolute </li>
-        <li class="list-group-item"><strong>Base:</strong> Vanilla Extract</li>
-      </ul>
-    </section>
-    
-    <!-- Details -->
-    <section class="container my-5" id="details">
-      <h3 class="mb-3">Product Details</h3>
-      <p class="fs-5">
-        - Eau de Parfum 100ml <br>
-        - Long-lasting wear  <br>
-        - Vegan, cruelty-free, and paraben-free  <br>
-      </p>
-    </section>
-    
-    <!-- Related Products -->
-    <section class="container my-5">
-      <h4 class="mb-4">Explore More in Jasmine</h4>
-      <div class="row g-4">
-        <div class="col-md-3 col-sm-6 d-flex flex-column align-items-center">
-          <a href="jomalonejasmine.html"><img src="./img/jo-malone-jasmine.jpg" class="img-fluid product-img" alt="jo-malone-jasmine"></a>
-          <p class="text-center mt-2">Jo Malone White Jasmine and Mint </p>
-        </div>
-        <div class="col-md-3 col-sm-6 d-flex flex-column align-items-center mt-5">
-          <a href="jasmingrandiflorum.html"><img src="./img/guerlain-jasmin.jpg" class="img-fluid product-img ms-1" alt="guerlain-jasmin">
-          <p class="text-center mt-2">Jasmin Grandiflorum Extrait 30</p>
-        </div>
-        <div class="col-md-3 col-sm-6 d-flex flex-column align-items-center mt-5">
-          <a href="elegantlytokyo.html"><img src="./img/elegantly-tokyo.jpg" class="img-fluid product-img ms-1" alt="elegantly-tokyo"></a>
-          <p class="text-center mt-2">Zara Elegantly Tokyo</p>
-        </div>
-        <div class="col-md-3 col-sm-6 d-flex flex-column align-items-center mt-5">
-          <a href="jasminumsambac.html"><img src="./img/jasminum-sambac.jpg" class="img-fluid product-img ms-1" alt="jasminum-sambac">
-          <p class="text-center mt-2">Chloé Jasminum Sambac</p>
-        </div>
-        <!-- Add more as needed -->
+
+      <!-- Product 5 -->
+      <div class="col-md-4 product">
+        <a href="muscinvisible.html"><img src="./img/musc-invisible.jpg" class="product-img" alt="musc-invisible" width="150"></a>
+          <h5 class="card-title">Juliette Has A Gun Musc Invisible</h5>
+          <p class="fw-bold">$150.00</p>
+    </div>
+
+    <!-- Product 6 -->
+    <div class="col-md-4 product mt-3">
+      <a href="byredoblanche.html"><img src="./img/byredo-blanche.jpg" class="product-img" alt="byredo-blanche" width="150"></a>
+        <h5 class="card-title">Byredo Blanche</h5>
+        <p class="fw-bold">$266.00</p>
+  </div>
+
+  <!-- Product 7 -->
+  <div class="col-md-4 product mt-3">
+    <a href="whitemusk.html"><img src="./img/white-musk.jpg" class="product-img" alt="white-musk" width="150"></a>
+      <h5 class="card-title">The Body Shop White Musk</h5>
+      <p class="fw-bold">$30.00</p>
+</div>
+
+<!-- Product 8 -->
+<div class="col-md-4 product mt-3">
+  <a href="missingperson.html"><img src="./img/missing-person.jpg" class="product-img" alt="missing-person" width="150"></a>
+    <h5 class="card-title">Phlur Missing Person</h5>
+    <p class="fw-bold">$99.00</p>
+</div>
+
+<!-- Product 9 -->
+<div class="col-md-4 product mt-3">
+  <a href="diptyquepapier.html"><img src="./img/diptyque-papier.jpg" class="product-img" alt="diptyque-papier" width="150"></a>
+    <h5 class="card-title">Diptyque L'Eau Papier</h5>
+    <p class="fw-bold">$185.00</p>
+</div>
+
       </div>
-    </section>
-    
-  </main>
-    
+    </div>
+  </section>
+
 
   <footer class="footer mt-5">
     <div class="container">
