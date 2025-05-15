@@ -455,3 +455,30 @@ li a {
   height: 100vh;
   width: 100%;
 }
+
+.beach-hero {
+  background-image: url(./img/beach-hero.jpg);
+  background-position: center bottom;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
+  width: 100%;
+}
+
+.birthday-hero {
+  background-image: url(./img/birthday-hero.jpg);
+  background-position: center bottom;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
+  width: 100%;
+}
+
+.office-hero {
+  background-image: url(./img/office-hero.jpg);
+  background-position: center bottom;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
+  width: 100%;
+}
