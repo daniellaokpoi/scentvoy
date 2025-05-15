@@ -482,3 +482,12 @@ li a {
   height: 100vh;
   width: 100%;
 }
+
+.datenight-hero {
+  background-image: url(./img/datenight-hero.jpg);
+  background-position: center bottom;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
+  width: 100%;
+}
