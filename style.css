@@ -446,3 +446,12 @@ li a {
   height: 100vh;
   width: 100%;
 }
+
+.sandalwood-hero {
+  background-image: url(./img/sandalwood-hero.jpg);
+  background-position: center bottom;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
+  width: 100%;
+}
