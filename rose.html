@@ -111,16 +111,16 @@
                   <p class="fw-bold">Shop By Ingredient</p>
                   <ul>
                     <li>Discover All</li>
-                    <a href="amber.html">Amber</a><li></li>
-                    <li>Citrus</li>
-                    <li>Coconut</li>
-                    <li>Jasmine</li>
-                    <li>Lavender</li>
-                    <li>Musk</li>
-                    <li>Patchouli</li>
+                    <a href="amber.html" class="text-dark" style="text-decoration: none;">Amber</a><li></li>
+                    <a href="citrus.html">Citrus</a><li></li>
+                    <a href="coconut.html">Coconut</a><li></li>
+                    <a href="jasmine.html">Jasmine</a><li></li>
+                    <a href="lavender.html">Lavender</a><li></li>
+                    <a href="musk.html">Musk</a><li></li>
+                    <a href="patchouli.html">Patchouli</a><li></li>
                     <li>Rose</li>
                     <li>Sandalwood</li>
-                    <a href="vanilla.html">Vanilla</a><li></li>
+                    <a href="vanilla.html" class="text-dark" style="text-decoration: none;">Vanilla</a><li></li>
                   </ul>
                 </div>
               </div>
@@ -186,92 +186,89 @@
     <input type="text" id="searchBox" class="form-control" placeholder="Search perfumes..." onkeyup="filterPerfumes()">
   </div>
 
+  <section class="rose-hero d-flex align-items-center justify-content-center text-center">
+  <h1 class="text-light vanilla-text display-1">Rose</h1>
+  </section>
 
-  <main data-bs-spy="scroll" data-bs-target="#product-nav" data-bs-offset="100" tabindex="0">
+  <section class="hero text-center">
+    <div class="container mt-5">
+      <h1>Shop Rose Perfumes</h1>
+      <p class="lead">Romantic, elegant, and timeless — rose perfumes bloom with soft, floral sophistication.</p>
+    </div>
+  </section>
 
-    <!-- Sticky Scrollspy Nav -->
-    <nav id="product-nav" class="navbar navbar-expand-lg navbar-light bg-light sticky-top shadow-sm">
-      <div class="container">
-        <a class="navbar-brand" href="celestialpatchouli.html">Sana Jardin Celestial Patchouli</a>
-        <ul class="navbar-nav ms-auto">
-          <li class="nav-item"><a class="nav-link" href="#description">Description</a></li>
-          <li class="nav-item"><a class="nav-link" href="#notes">Scent Notes</a></li>
-          <li class="nav-item"><a class="nav-link" href="#details">Details</a></li>
-        </ul>
-      </div>
-    </nav>
-    
-    <!-- Product Overview -->
-    <section class="container my-5" id="description">
-      <div class="row">
-        <div class="col-md-6">
-          <img src="./img/celestial-patchouli.jpg" alt="celestial-patchouli" class="img-fluid product-img ms-5">
-        </div>
-        <div class="col-md-6">
-          <h2 class="fw-bold">Sana Jardin Celestial Patchouli </h2>
-          <p class="text-muted fs-4 mb-1">$193.50</p>
-          <p class="lead"> A wonderfully rich, intense fragrance that will appeal to the global travelers amongst us, Sana Jardins Celestial Patchouli is an irresistible cosmos of scent. The swirling, aromatic depths of patchouli, leather, Australian sandalwood and rich, smoky cedar wood will draw you in, mingled with a captivating heart of soft, warm rose, osmanthus and Moroccan orris. Coriander seed lingers at the surface of this fragrance, intriguing olfactory senses, while the patchouli at the centre of the incredible combination is thought to harmonise, balance and relax both body and senses, also acting as an aphrodisiac. </p>
-          <!-- Quantity Selector -->
-          <div class="d-flex align-items-center my-3">
-            <label class="me-2 fw-semibold">Quantity:</label>
-            <input type="number" class="form-control w-25" min="1" value="1">
+  <!-- PRODUCTS -->
+  <section class="py-5">
+    <div class="container">
+      <div class="row justify-content-center">
+        
+        <!-- Product 1 -->
+        <div class="col-md-4 product mt-4">
+            <a href="idolenectar.html"><img src="./img/idole-nectar.jpg" class="product-img kayali" alt="idole-nectar"></a>
+              <h5 class="card-title">Lancôme Idole Nectar</h5>
+              <p class="fw-bold">$155.00</p>
           </div>
-    
-          <!-- Buttons -->
-          <div class="d-flex gap-3">
-            <button class="btn btn-dark">Add to Cart</button>
-            <button class="btn btn-outline-dark">♡ Wishlist</button>
-          </div>
+
+        <!-- Product 2 -->
+        <div class="col-md-4 product mt-3">
+            <a href="missdior.html"><img src="./img/miss-dior.jpg" class="product-img" alt="miss-dior"></a>
+              <h5 class="card-title">Miss Dior Eau de Parfum</h5>
+              <p class="fw-bold">$115.00</p>
+            </div>
+
+        <!-- Product 3 -->
+        <div class="col-md-4 product mt-5">
+            <a href="roseprick.html"><img src="./img/rose-prick.jpg" class="product-img" alt="rose-prick" width="150"></a>
+              <h5 class="card-title">Tom Ford Rose Prick</h5>
+              <p class="fw-bold">$405.00</p>
         </div>
+
+        <!-- Product 4 -->
+        <div class="col-md-4 product">
+         <a href="delina.html"><img src="./img/delina.jpg" class="product-img" alt="delina" width="150"></a>
+            <h5 class="card-title">Parfums de Marly Delina</h5>
+            <p class="fw-bold">$390.00</p>
       </div>
-    </section>
-    
-    <!-- Scent Notes -->
-    <section class="container my-5" id="notes">
-      <h3 class="mb-3">Scent Notes</h3>
-      <ul class="list-group list-group-flush fs-5">
-        <li class="list-group-item"><strong>Top:</strong> Coriander</li>
-        <li class="list-group-item"><strong>Heart:</strong> Rose, Orris Root, Osmanthus, Iris</li>
-        <li class="list-group-item"><strong>Base:</strong> Patchouli, Cinnamon, Cypriol Oil, Australian Sandalwood, Leather, Cedar.</li>
-      </ul>
-    </section>
-    
-    <!-- Details -->
-    <section class="container my-5" id="details">
-      <h3 class="mb-3">Product Details</h3>
-      <p class="fs-5">
-        - Eau de Parfum 100ml <br>
-        - Long-lasting wear  <br>
-        - Vegan, cruelty-free, and paraben-free  <br>
-      </p>
-    </section>
-    
-    <!-- Related Products -->
-    <section class="container my-5">
-      <h4 class="mb-4">Explore More in Patchouli</h4>
-      <div class="row g-4">
-        <div class="col-md-3 col-sm-6 d-flex flex-column align-items-center">
-          <a href="eaudessens.html"><img src="./img/eau-des-sens.jpg" class="img-fluid product-img" alt="eau-des-sens"></a>
-          <p class="text-center mt-2">Diptyque Eau Des Sens</p>
-        </div>
-        <div class="col-md-3 col-sm-6 d-flex flex-column align-items-center mt-5">
-          <a href="absolutepourfemme.html"><img src="./img/absolute-pour-femme.jpg" class="img-fluid product-img ms-1" alt="absolute-pour-femme">
-          <p class="text-center mt-2">Gucci Guilty Absolute Pour Femme</p>
-        </div>
-        <div class="col-md-3 col-sm-6 d-flex flex-column align-items-center mt-5">
-          <a href="patchouli24.html"><img src="./img/patchouli-24.jpg" class="img-fluid product-img ms-1" alt="patchouli-24"></a>
-          <p class="text-center mt-2">Le Labo Patchouli 24</p>
-        </div>
-        <div class="col-md-3 col-sm-6 d-flex flex-column align-items-center mt-5">
-          <a href="patchoulicitrus.html"><img src="./img/patchouli-citrus.jpg" class="img-fluid product-img ms-1" alt="patchouli-citrus">
-          <p class="text-center mt-2">The 7 Virtues Patchouli Citrus</p>
-        </div>
-        <!-- Add more as needed -->
+
+      <!-- Product 5 -->
+      <div class="col-md-4 product">
+        <a href="roseofnomansland.html"><img src="./img/byredo-rose.jpg" class="product-img" alt="byredo-rose" width="150"></a>
+          <h5 class="card-title">Byredo Rose of No Man's Land</h5>
+          <p class="fw-bold">$268.00</p>
+    </div>
+
+    <!-- Product 6 -->
+    <div class="col-md-4 product mt-3">
+      <a href="mfkrose.html"><img src="./img/mfk-rose.jpg" class="product-img" alt="mfk-rose" width="150"></a>
+        <h5 class="card-title"> À La Rose</h5>
+        <p class="fw-bold">$245.00</p>
+  </div>
+
+  <!-- Product 7 -->
+  <div class="col-md-4 product mt-3">
+    <a href="montaleroses.html"><img src="./img/montale-roses.jpg" class="product-img" alt="montale-roses" width="150"></a>
+      <h5 class="card-title">Montale Roses Musk</h5>
+      <p class="fw-bold">$180.00</p>
+</div>
+
+<!-- Product 8 -->
+<div class="col-md-4 product mt-3">
+  <a href="rosadamascena.html"><img src="./img/rosa-damascena.jpg" class="product-img" alt="rosadamascena" width="150"></a>
+    <h5 class="card-title">Chloé Rosa Damascena</h5>
+    <p class="fw-bold">$155.00</p>
+</div>
+
+<!-- Product 9 -->
+<div class="col-md-4 product mt-3">
+  <a href="rosegoldea.html"><img src="./img/rose-goldea.jpg" class="product-img" alt="rose-goldea" width="150"></a>
+    <h5 class="card-title">Bulgari Rose Goldea</h5>
+    <p class="fw-bold">$143.00</p>
+</div>
+
       </div>
-    </section>
-    
-  </main>
-    
+    </div>
+  </section>
+
 
   <footer class="footer mt-5">
     <div class="container">
