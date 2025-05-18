@@ -536,3 +536,12 @@ li a {
   height: 100vh;
   width: 100%;
 }
+
+.cozy-hero {
+  background-image: url(./img/cozy-hero.jpg);
+  background-position: center bottom;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
+  width: 100%;
+}
