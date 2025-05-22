@@ -575,7 +575,7 @@ li a {
 
 .bohemian-hero {
   background-image: url(./img/bohemian-hero.jpg);
-  background-position: center bottom;
+  background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
   height: 100vh;
