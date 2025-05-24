@@ -175,141 +175,165 @@
     <input type="text" id="searchBox" class="form-control" placeholder="Search perfumes..." onkeyup="filterPerfumes()">
   </div>
 
-  <!-- Hero section -->
-  <section class="container-fluid hero-section">
-    <div class="row justify-content-center">
-      <div class="col-10 col-md-8 text-center hero-content">
-        <a href="#quiz" class="btn hero-btn mt-3">Find Your Scent</a>
-      </div>
-    </div>
-  </section>
-
-  <!-- Best Sellers Section -->
-  <section class="sellers-sect py-5">
-    <div class="container text-center">
-      <h2 class="section-heading fw-bold mb-5">BEST SELLERS</h2>
-      <p class="fs-5 text-muted">Hand-picked by thousands of fragrance lovers just like you.</p>
-
-      <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
-        <div class="carousel-indicators">
-          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
-            aria-current="true" aria-label="Slide 1"></button>
-          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
-            aria-label="Slide 2"></button>
-          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
-            aria-label="Slide 3"></button>
-        </div>
-
-        <div class="carousel-inner">
-          <div class="carousel-item active">
-            <img src="./img/ysl_transparent-removebg-preview.png" class="d-block carousel-img rounded" alt="YSL perfume"
-              loading="lazy">
-            <div class="carousel-caption-custom">
-              <p class="product-price">$165.00</p>
-            </div>
-          </div>
-
-          <div class="carousel-item">
-            <img src="./img/zara_perfume-removebg-preview.png" class="d-block carousel-img rounded" alt="Zara perfume"
-              loading="lazy">
-            <div class="carousel-caption-custom">
-              <p class="product-price">$230.00</p>
-            </div>
-          </div>
-
-          <div class="carousel-item">
-            <img src="./img/versace_eros-removebg-preview.png" class="d-block carousel-img rounded" alt="Versace Eros"
-              loading="lazy">
-            <div class="carousel-caption-custom">
-              <p class="product-price">$138.00</p>
-            </div>
-          </div>
-        </div>
-
-        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions"
-          data-bs-slide="prev">
-          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Previous</span>
-        </button>
-        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions"
-          data-bs-slide="next">
-          <span class="carousel-control-next-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Next</span>
-        </button>
-      </div>
-    </div>
-  </section>
-
-  <!-- Category Section -->
-  <section class="py-5 bg-light" id="categories">
-    <div class="container text-center">
-      <h2 class="mb-4 fw-semibold">Shop by Category</h2>
-      <div class="row justify-content-center g-4">
-
-        <!-- Category Card -->
-        <div class="col-6 col-sm-4 col-md-3 col-lg-2">
-          <a href="forher.html" class="text-decoration-none">
-          <div class="position-relative rounded overflow-hidden shadow-sm category-card">
-            <img src="./img/diptyque.jpg" alt="For Her" class="img-fluid w-100 category-img">
-            <div
-              class="category-label position-absolute bottom-0 start-0 w-100 text-white py-2 px-2 text-uppercase fw-semibold">
-              For Her
-            </div>
-          </div>
-        </a>
-        </div>
-
-        <!-- Repeat Cards -->
-        <div class="col-6 col-sm-4 col-md-3 col-lg-2">
-          <a href="forhim.html" class="text-decoration-none">
-          <div class="position-relative rounded overflow-hidden shadow-sm category-card">
-            <img src="./img/le labo masc.jpg" alt="For Him" class="img-fluid w-100 category-img">
-            <div
-              class="category-label position-absolute bottom-0 start-0 w-100 text-white py-2 px-2 text-uppercase fw-semibold">
-              For Him
-            </div>
-          </div>
-        </a>
-        </div>
-
-        <div class="col-6 col-sm-4 col-md-3 col-lg-2">
-          <a href="unisex.html" class="text-decoration-none">
-          <div class="position-relative rounded overflow-hidden shadow-sm category-card">
-            <img src="./img/acqua di gio.jpg" alt="Unisex" class="img-fluid w-100 category-img">
-            <div
-              class="category-label position-absolute bottom-0 start-0 w-100 text-white py-2 px-2 text-uppercase fw-semibold">
-              Unisex
-            </div>
-          </div>
-        </a>
-        </div>
-
-        <div class="col-6 col-sm-4 col-md-3 col-lg-2">
-          <a href="luxuryperfumes.html" class="text-decoration-none">
-          <div class="position-relative rounded overflow-hidden shadow-sm category-card">
-            <img src="./img/ysl perfume.jpg" alt="Luxury" class="img-fluid w-100 category-img">
-            <div
-              class="category-label position-absolute bottom-0 start-0 w-100 text-white py-2 px-2 text-uppercase fw-semibold">
-              Luxury
-            </div>
-          </div>
-        </a>
-        </div>
-
-      </div>
-    </div>
-  </section>
-
-
-
-  <!-- Find Your Scent Quiz -->
-  <section class="py-5 text-center bg-dark text-white mt-5" id="scent-quiz">
+  <section class="guide-hero text-center">
     <div class="container">
-      <h2 class="mb-3">Not Sure Where to Start?</h2>
-      <p class="mb-4 lead">Take our 60-second quiz to find your signature scent.</p>
-      <a href="#!" class="btn btn-outline-light btn-lg rounded-pill px-4">Take the Quiz</a>
+      <h1 class="display-5 fw-bold mb-2 text-light">Unlock the Secrets of Scent</h1>
+      <p class="lead mb-4 text-light">Explore fragrance families, notes, and tips to find your perfect perfume.</p>
+      <a href="#families" class="btn btn-light btn-lg">Start Exploring</a>
     </div>
   </section>
+
+  <!-- Fragrance Families -->
+  <section id="families" class="py-5">
+    <div class="container">
+      <h2 class="text-center fw-bold mb-5">Fragrance Families</h2>
+      <div class="row g-4 justify-content-center">
+        <!-- Floral -->
+        <div class="col-6 col-md-3">
+          <div class="card family-card h-100 text-center p-3">
+            <img src="./img/.jpg" class="rounded-circle mb-3 mx-auto" alt="Floral">
+            <h5 class="fw-semibold">Floral</h5>
+            <p class="small text-muted">Roses · Jasmine · Peony</p>
+          </div>
+        </div>
+        <!-- Woody -->
+        <div class="col-6 col-md-3">
+          <div class="card family-card h-100 text-center p-3">
+            <img src="https://source.unsplash.com/200x200/?sandalwood" class="rounded-circle mb-3 mx-auto" alt="Woody">
+            <h5 class="fw-semibold">Woody</h5>
+            <p class="small text-muted">Sandalwood · Cedar · Vetiver</p>
+          </div>
+        </div>
+        <!-- Oriental -->
+        <div class="col-6 col-md-3">
+          <div class="card family-card h-100 text-center p-3">
+            <img src="https://source.unsplash.com/200x200/?amber" class="rounded-circle mb-3 mx-auto" alt="Oriental">
+            <h5 class="fw-semibold">Oriental</h5>
+            <p class="small text-muted">Amber · Vanilla · Spice</p>
+          </div>
+        </div>
+        <!-- Fresh -->
+        <div class="col-6 col-md-3">
+          <div class="card family-card h-100 text-center p-3">
+            <img src="https://source.unsplash.com/200x200/?citrus" class="rounded-circle mb-3 mx-auto" alt="Fresh">
+            <h5 class="fw-semibold">Fresh</h5>
+            <p class="small text-muted">Citrus · Oceanic · Green</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Concentration Levels -->
+  <section class="py-5 bg-light">
+    <div class="container">
+      <h2 class="text-center fw-bold mb-4">Concentration Levels</h2>
+      <div class="table-responsive">
+        <table class="table text-center align-middle">
+          <thead class="table-dark">
+            <tr><th>Type</th><th>Oil %</th><th>Longevity</th></tr>
+          </thead>
+          <tbody>
+            <tr><td>Parfum</td><td>20–30%</td><td>8–12 hrs</td></tr>
+            <tr><td>Eau de Parfum</td><td>15–20%</td><td>6–8 hrs</td></tr>
+            <tr><td>Eau de Toilette</td><td>5–15%</td><td>3–5 hrs</td></tr>
+            <tr><td>Eau de Cologne</td><td>2–5%</td><td>1–2 hrs</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </section>
+
+  <!-- Notes Pyramid -->
+  <section class="py-5">
+    <div class="container">
+      <h2 class="text-center fw-bold mb-5">Fragrance Notes Pyramid</h2>
+      <div class="row justify-content-center">
+        <div class="col-md-6">
+          <div class="pyramid-step mb-4">
+            <h5 class="fw-semibold">Top Notes</h5>
+            <p class="small">First impression – citrus, herbs, light fruits.</p>
+          </div>
+          <div class="pyramid-step mb-4">
+            <h5 class="fw-semibold">Heart Notes</h5>
+            <p class="small">Core of the fragrance – florals, spices.</p>
+          </div>
+          <div class="pyramid-step">
+            <h5 class="fw-semibold">Base Notes</h5>
+            <p class="small">Long-lasting foundation – woods, resins, musks.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Mood Grid -->
+  <section class="py-5 bg-light">
+    <div class="container">
+      <h2 class="text-center fw-bold mb-5">Scent by Mood</h2>
+      <div class="row g-4">
+        <div class="col-6 col-md-3">
+          <div class="card h-100 border-0 shadow-sm">
+            <div class="card-body text-center">
+              <h5 class="fw-semibold">Minimalist</h5>
+              <p class="small mb-1 text-muted">Clean Reserve – Skin</p>
+              <p class="small text-muted">Glossier – You</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-6 col-md-3">
+          <div class="card h-100 border-0 shadow-sm text-center">
+            <div class="card-body">
+              <h5 class="fw-semibold">Classic</h5>
+              <p class="small mb-1 text-muted">Chanel – No.5</p>
+              <p class="small text-muted">Guerlain – Shalimar</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-6 col-md-3">
+          <div class="card h-100 border-0 shadow-sm text-center">
+            <div class="card-body">
+              <h5 class="fw-semibold">Glam</h5>
+              <p class="small mb-1 text-muted">Carolina Herrera – Good Girl</p>
+              <p class="small text-muted">YSL – Libre Intense</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-6 col-md-3">
+          <div class="card h-100 border-0 shadow-sm text-center">
+            <div class="card-body">
+              <h5 class="fw-semibold">Cozy</h5>
+              <p class="small mb-1 text-muted">Replica – By the Fireplace</p>
+              <p class="small text-muted">Kayali – Vanilla 28</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Application Tips -->
+  <section class="py-5">
+    <div class="container">
+      <h2 class="text-center fw-bold mb-4">Application Tips</h2>
+      <ul class="list-group list-group-flush mx-auto" style="max-width:600px;">
+        <li class="list-group-item">Apply to pulse points (wrists, neck, behind ears).</li>
+        <li class="list-group-item">Moisturize skin first for better longevity.</li>
+        <li class="list-group-item">Avoid rubbing wrists together – it crushes top notes.</li>
+        <li class="list-group-item">Store perfumes away from heat and direct sunlight.</li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section class="py-5 bg-dark text-white text-center">
+    <div class="container">
+      <h3 class="fw-bold mb-3">Ready to Find Your Match?</h3>
+      <a href="/quiz" class="btn btn-light btn-lg me-2">Take the Scent Quiz</a>
+      <a href="/shop" class="btn btn-outline-light btn-lg">Shop All Perfumes</a>
+    </div>
+  </section>
+
 
   <footer class="footer mt-5">
     <div class="container">
