@@ -43,8 +43,8 @@ const appendAlert = (message, type) => {
 const alertTrigger = document.getElementById('liveAlertBtn')
 if (alertTrigger) {
   alertTrigger.addEventListener('click', () => {
-    appendAlert('Nice, you liked this Fragrance!', 'success')
+    appendAlert('This perfume has been added to your wishlist', 'success')
   })
 }else {
-  appendAlert('Nice, you unliked this Fragrance!', 'success')
+  appendAlert('This perfume has been removed from your wishlist', 'success')
 }
