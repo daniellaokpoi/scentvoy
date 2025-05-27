@@ -23,7 +23,7 @@
     rel="stylesheet">
 </head>
 
-<body>
+<body class="dashboard-body">
 
   <header>
 
@@ -47,16 +47,76 @@
         <div class="collapse navbar-collapse justify-content-center mx-5" id="navbarSupportedContent">
           <ul class="navbar-nav mx-auto mb-2 mb-lg-0 text-center gap-3">
             <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="#">Home</a>
+              <a class="nav-link active" aria-current="page" href="index.html">Home</a>
             </li>
             <li class="nav-item">
               <a class="nav-link active" aria-current="page" href="about.html">About</a>
             </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Find Your Scent</a>
+            <li class="nav-item dropdown position-static">
+              <a class="nav-link" href="#" id="shop-nav">Shop</a>
+              <div
+                class="position-absolute d-none flex-wrap justify-content-center p-4 shadow-sm border-top"
+                id="shop-drop";>
+                <div class="flex-fill mx-4 mt-4 pt-3" style="max-width: 250px;">
+                  <img src="./img/fireworks.jpg" alt="fireworks" class="img-fluid mb-2 dropdown-img">
+                  <p class="fw-bold">Shop By Event</p>
+                  <ul>
+                    <li><a href="beach.html">Beach Day</a></li>
+                    <li><a href="birthday.html">Birthday</a></li>
+                    <li><a href="datenight.html">Date Night</a><li></li>
+                    <li><a href="everyday.html">Everyday Wear</a><li></li>
+                    <li><a href="girlsnight.html">Girls' Night Out</a><li></li>
+                    <li><a href="office.html">Office/Work</a><li></li>
+                    <li><a href="wedding.html">Wedding</a><li></li>
+                  </ul>
+                </div>
+
+                <div class="flex-fill mx-4 mt-4 pt-3" style="max-width: 250px;">
+                  <img src="./img/mood-shop.jpg" alt="coffee and books" class="img-fluid mb-2 dropdown-img">
+                  <p class="fw-bold">Shop By Mood</p>
+                  <ul>
+                    <li><a href="bold.html">Bold</a></li>
+                    <li><a href="cozy.html">Cozy</a></li>
+                    <li><a href="elegant.html">Elegant</a></li>
+                    <li><a href="feelgood.html">Feel Good</a></li>
+                    <li><a href="mysterious.html">Mysterious</a></li>
+                    <li><a href="romantic.html">Romantic</a></li>
+                  </ul>
+                </div>
+
+                <div class="flex-fill mx-4 mt-4 pt-3" style="max-width: 250px;">
+                  <img src="./img/aesthetic-shop.jpg" alt="white flowers" class="img-fluid mb-2 dropdown-img">
+                  <p class="fw-bold">Shop By Aesthetic</p>
+                  <ul>
+                    <li><a href="bohemian.html">Bohemian</a></li>
+                    <li><a href="darkacademia.html">Dark Academia</a></li>
+                    <li><a href="glam.html">Glam</a></li>
+                    <li><a href="minimalist.html">Minimalist</a></li>
+                    <li><a href="vintage.html">Vintage</a></li>
+                  </ul>
+                </div>
+
+                <div class="flex-fill mx-4 mt-4 pt-3" style="max-width: 250px;">
+                  <img src="./img/ingredient-shop.jpg" alt="incense" class="img-fluid mb-2 dropdown-img">
+                  <p class="fw-bold">Shop By Ingredient</p>
+                  <ul>
+                    <li><a href="amber.html" class="text-dark" style="text-decoration: none;">Amber</a></li>
+                    <li><a href="citrus.html" class="text-dark" style="text-decoration: none;">Citrus</a></li>
+                    <li><a href="coconut.html" class="text-dark" style="text-decoration: none;">Coconut</a></li>
+                    <li><a href="jasmine.html" class="text-dark" style="text-decoration: none;">Jasmine</a></li>
+                    <li><a href="lavender.html" class="text-dark" style="text-decoration: none;">Lavender</a></li>
+                    <li><a href="musk.html" class="text-dark" style="text-decoration: none;">Musk</a></li>
+                    <li><a href="patchouli.html" class="text-dark" style="text-decoration: none;">Patchouli</a></li>
+                    <li><a href="rose.html" class="text-dark" style="text-decoration: none;">Rose</a></li>
+                    <li><a href="sandalwood.html" class="text-dark" style="text-decoration: none;">Sandalwood</a></li>
+                    <li><a href="vanilla.html" class="text-dark" style="text-decoration: none;">Vanilla</a></li>
+                  </ul>
+                </div>
+              </div>
             </li>
+
             <li class="nav-item">
-              <a class="nav-link" href="#">Fragrance Guide</a>
+              <a class="nav-link" href="fragranceguide.html">Fragrance Guide</a>
             </li>
           </ul>
 
@@ -115,40 +175,150 @@
     <input type="text" id="searchBox" class="form-control" placeholder="Search perfumes..." onkeyup="filterPerfumes()">
   </div>
 
-  <section class="account-sect">
-    <form action="" method="get">
-      <div class="row justify-content-center">
-        <div class="col-lg-5 col-md-5 col-sm-12">
-          <div class="ms-5">
-            <p>SIGN IN</p>
-            <p>
-              <label for="mail" class="mb-2">Email address:</label><br>
-              <input type="mail" id="mail" name="mail" placeholder="Email address" autocomplete="on" required
-                class="sign-input w-75 rounded-3 border-0">
-            </p>
-            <p>
-              <label for="password" class="mb-2">Password:</label><br>
-              <input type="password" id="password" name="password" placeholder="Password" autocomplete="on" required
-                class="sign-input w-75 rounded-3 border-0">
-            </p>
-            <a href="#" class="reset-pass">Forgot your password?</a><br>
-            <a href="#" class="btn btn-dark text-light btn-lg mt-4 mb-5"
-              style="--bs-btn-padding-y: 0.8rem; --bs-btn-padding-x: 2rem; --bs-btn-font-size: 1rem;">Sign In</a>
+
+  <div class="container my-5">
+    <!-- Header -->
+    <header class="d-flex justify-content-between align-items-center mb-4">
+      <h1 class="text-dark fw-bold">ScentVoy&nbsp;Dashboard</h1>
+    </header>
+
+    <!-- Welcome -->
+    <section class="mb-4 p-4 bg-white rounded shadow-sm">
+      <h4>Welcome back, <strong>Daniella</strong>!</h4>
+      <p class="text-muted">Ready to discover your next favorite fragrance?</p>
+    </section>
+
+    <!-- Grid -->
+    <div class="row g-4">
+      <!-- Profile -->
+      <section class="col-md-6 col-lg-4">
+        <div class="card shadow-sm h-100">
+          <div class="card-body d-flex flex-column">
+            <h5 class="card-title text-dark">Your Profile</h5>
+            <p><strong>Name:</strong> Daniella Okpoi</p>
+            <p><strong>Email:</strong> daniella@example.com</p>
+            <p><strong>Membership:</strong> <span class="status">Gold</span></p>
+            <a href="#" class="mt-auto fw-semibold dashboard-anchor">Edit Profile</a>
           </div>
         </div>
-        <div class="col-lg-5 col-md-5 col-sm-12">
-          <div class="ms-5">
-            <p>REGISTER</p>
-            <p>Create an account to modify an order, view and track a shipment, and update your account info.</p>
-            <a href="register.html" class="btn btn-dark text-light btn-lg mt-4 mb-5 w-75"
-              style="--bs-btn-padding-y: 0.8rem; --bs-btn-padding-x: 2rem; --bs-btn-font-size: 1rem;">Register</a>
+      </section>
+
+      <!-- Orders -->
+      <section class="col-md-6 col-lg-4">
+        <div class="card shadow-sm h-100">
+          <div class="card-body d-flex flex-column">
+            <h5 class="card-title text-dark">Recent Orders</h5>
+            <ul class="list-group flex-grow-1 overflow-auto" style="max-height:180px;">
+              <li class="list-group-item d-flex justify-content-between align-items-center">
+                Order #12345 – Kayali Vanilla 28
+                <span class="order-status status-delivered">Delivered</span>
+              </li>
+              <li class="list-group-item d-flex justify-content-between align-items-center">
+                Order #12346 – North Bondi
+                <span class="order-status status-shipped">Shipped</span>
+              </li>
+              <li class="list-group-item d-flex justify-content-between align-items-center">
+                Order #12347 – Santal Dan Sha
+                <span class="order-status status-processing">Processing</span>
+              </li>
+            </ul>
+            <a href="#" class="mt-3 fw-semibold dashboard-anchor" onclick="scrollToSection('all-orders')">View All Orders</a>
           </div>
         </div>
+      </section>
 
+      <!-- Wishlist -->
+      <section class="col-md-6 col-lg-4">
+        <div class="card shadow-sm h-100">
+          <div class="card-body d-flex flex-column">
+            <h5 class="card-title text-dark">Your Wishlist</h5>
+            <div class="row g-2 flex-grow-1 overflow-auto" style="max-height:180px;">
+              <div class="col-4">
+                <div class="card item-card" tabindex="0" title="rouge chaotique">
+                  <img src="./img/rouge-chaotique.jpg" alt="rouge chaotique" />
+                  <div class="p-2 text-dark fw-semibold">Rouge Chaotique</div>
+                </div>
+              </div>
+              <div class="col-4">
+                <div class="card item-card" tabindex="0" title="diptyque philosykos">
+                  <img src="./img/diptyque-philosykos.jpg" alt="diptyque philosykos" />
+                  <div class="p-2 text-dark fw-semibold">Diptyque Philosykos</div>
+                </div>
+              </div>
+              <div class="col-4">
+                <div class="card item-card" tabindex="0" title="liquide">
+                  <img src="./img/liquidesimaginaires-liquide.jpg" alt="liquide" />
+                  <div class="p-2 text-dark fw-semibold">Liquide</div>
+                </div>
+              </div>
+            </div>
+            <a href="wishlist.html" class="mt-3 fw-semibold dashboard-anchor" onclick="scrollToSection('wishlist-full')">View Full Wishlist</a>
+          </div>
+        </div>
+      </section>
 
+      <!-- Offers -->
+      <section class="col-md-6 col-lg-4">
+        <div class="card shadow-sm h-100 d-flex flex-column justify-content-center">
+          <div class="offer mx-3" id="offer1" tabindex="0">
+            🎉 Gold members get 15% off your next purchase! Use code <strong>GOLD15</strong>
+          </div>
+          <div class="offer mx-3 mt-3" id="offer2" tabindex="0">
+            ✨ Early access to our Summer Collection launches June 1 st!
+          </div>
+        </div>
+      </section>
+
+      <!-- Recommendations -->
+      <section class="col-md-6 col-lg-4">
+        <div class="card shadow-sm h-100">
+          <div class="card-body d-flex flex-column">
+            <h5 class="card-title text-dark">Recommended for You</h5>
+            <div class="row g-2 flex-grow-1 overflow-auto" style="max-height:180px;">
+              <div class="col-4">
+                <div class="card item-card" tabindex="0" title="Timbuktu">
+                  <img src="./img/timbuktu.jpg" alt="Timbuktu"/>
+                  <div class="p-2 text-dark fw-semibold">Timbuktu</div>
+                </div>
+              </div>
+              <div class="col-4">
+                <div class="card item-card" tabindex="0" title="Gucci Bloom">
+                  <img src="./img/gucci-bloom.jpg" alt="Gucci Bloom" />
+                  <div class="p-2 text-dark fw-semibold">Gucci Bloom</div>
+                </div>
+              </div>
+              <div class="col-4">
+                <div class="card item-card" tabindex="0" title="Glossier You">
+                  <img src="./img/glossier-you.jpg" alt="Glossier You" />
+                  <div class="p-2 text-dark fw-semibold">Glossier You</div>
+                </div>
+              </div>
+            </div>
+            <a href="#" class="mt-3 fw-semibold" onclick="scrollToSection('recommendations-full')">See More</a>
+          </div>
+        </div>
+      </section>
+    </div>
+  </div>
+
+  <!-- Offer Modal -->
+  <div class="modal fade" id="offerModal" tabindex="-1" aria-labelledby="offerModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header bg-primary text-white">
+          <h5 class="modal-title" id="offerModalLabel">Exclusive Offer</h5>
+          <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"></button>
+        </div>
+        <div class="modal-body">
+          <p id="modalOfferText">Full offer details appear here…</p>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-outline-primary" data-bs-dismiss="modal">Close</button>
+        </div>
       </div>
-    </form>
-  </section>
+    </div>
+  </div>
+
 
 
   <footer class="footer mt-5">
@@ -190,7 +360,8 @@
           <h5>Connect</h5>
           <form>
             <input type="email" placeholder="Enter your email" />
-            <button type="submit" class="mt-3 btn btn-lg btn-dark text-light" style="--bs-btn-padding-y: 0.5rem; --bs-btn-padding-x: 0.8rem; --bs-btn-font-size: 1rem;">Subscribe</button>
+            <button type="submit" class="mt-3 btn btn-lg btn-dark text-light"
+              style="--bs-btn-padding-y: 0.5rem; --bs-btn-padding-x: 0.8rem; --bs-btn-font-size: 1rem;">Subscribe</button>
           </form>
           <div class="social-icons mt-3">
             <a href="#"><i class="bi bi-instagram"></i></a>
@@ -208,11 +379,12 @@
         <i class="bi bi-paypal"></i>
         <i class="fab fa-apple-pay"></i>
       </div>
+    </div>
 
-      <div class="footer-bottom mt-5 text-center">
+      <div class="footer-bottom mt-5 text-center text-light bg-dark py-3 w-100">
         &copy; 2025 ScentVoy. All rights reserved.
       </div>
-    </div>
+    
   </footer>
 
 

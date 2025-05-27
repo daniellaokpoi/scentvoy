@@ -48,3 +48,11 @@ if (alertTrigger) {
 }else {
   appendAlert('This perfume has been removed from your wishlist', 'success')
 }
+
+// dashboard functions
+function removeItem(button) {
+  const card = button.closest('.col-md-4');
+  if (card) {
+    card.remove();
+  }
+}

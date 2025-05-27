@@ -673,3 +673,76 @@ li a {
   padding-left:1rem;
 }
 
+.dashboard-body{
+  background:#f9f9f9;
+  color:#333;
+  font-family:'Segoe UI',Tahoma,Geneva,Verdana,sans-serif;
+}
+
+.dashboard-anchor {color:#5a2a83
+}
+
+.dashboard-anchor:hover {
+  color:#4a1f75;
+  text-decoration:underline
+}
+
+.status {
+  font-weight:600;
+  color:#a060d8;
+}
+
+.order-status {
+  font-weight:600;
+  padding:3px 10px;
+  border-radius:12px;
+  font-size:.8rem;
+  text-transform:uppercase;
+  letter-spacing:.05em
+}
+
+.status-processing {
+  background:#f3d06c;
+  color:#7a6600
+}
+
+.status-shipped {
+  background:#6cc7f3;
+  color:#004f7a
+}
+
+.status-delivered {
+  background:#8bd46f;
+  color:#2a5d00
+}
+
+.items-list img {
+  object-fit:cover;
+  height:120px;
+  width:100%;
+  border-radius:8px 8px 0 0
+}
+
+.item-card {
+  cursor:pointer;
+  transition:box-shadow .2s;
+}
+
+.item-card:hover {
+  box-shadow:0 0 12px rgba(90,42,131,.4)
+}
+
+.offer{
+  background:#f2e6ff;
+  border-left:5px solid #5a2a83;
+  padding:15px 20px;
+  border-radius:8px;
+  font-weight:600;
+  color:#4a1f75;
+  cursor:pointer;
+  transition:background-color .3s;
+}
+
+.offer:hover {
+  background-color:#e1ceff
+}
