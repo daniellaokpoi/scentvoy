@@ -56,3 +56,75 @@ function removeItem(button) {
     card.remove();
   }
 }
+
+ // Smooth-scroll placeholder
+ function scrollToSection(id){ alert("This would scroll to section: "+id); }
+
+ // Show modal with offer text
+ document.querySelectorAll('.offer').forEach(el=>{
+   el.addEventListener('click',()=>{
+     document.getElementById('modalOfferText').textContent = el.textContent.trim();
+     new bootstrap.Modal(document.getElementById('offerModal')).show();
+   });
+ });
+
+//  sign in to dashboard
+ document.getElementById("loginForm").addEventListener("submit", function(event) {
+  event.preventDefault(); // Prevent default form submission
+
+  // Get input values
+  const email = document.getElementById("email").value.trim();
+  const password = document.getElementById("password").value.trim();
+
+  // Simple validation
+  if (email === "" || password === "") {
+    alert("Please fill in both email and password.");
+  } else {
+    // Redirect to dashboard.html
+    window.location.href = "dashboard.html";
+  }
+});
+
+// Bootstrap 'was-validated' styling helper
+function setValidationState(form, ok){
+  form.classList.remove('was-validated');
+  if(!ok) form.classList.add('was-validated');
+}
+
+// registration to dashboard
+document.addEventListener('DOMContentLoaded', () => {
+
+  const form   = document.getElementById('registerForm');
+  const pass   = document.getElementById('regPass');
+  const pass2  = document.getElementById('regPassConfirm');
+  const terms  = document.getElementById('regTerms');
+
+  form.addEventListener('submit', e => {
+    e.preventDefault();                       // stay on page for validation
+    let ok = form.checkValidity();            // HTML-built-in checks
+
+    if (pass.value.trim() !== pass2.value.trim()) {
+      ok = false;
+      alert('Passwords do not match.');
+    }
+    if (!terms.checked) {
+      ok = false;
+      alert('You must accept the Terms & Privacy Policy.');
+    }
+
+    if (ok) {
+      console.log('✅ form valid – redirecting to dashboard.html');
+      window.location.href = 'dashboard.html'; // ← redirect
+    } else {
+      console.log('❌ form NOT valid');
+      form.classList.add('was-validated');     // Bootstrap invalid styling
+    }
+  });
+
+});
+
+// Wishlist page
+function removeItem(button) {
+  const item = button.closest('.wishlist-item');
+  item.remove();
+}

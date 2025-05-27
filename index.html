@@ -128,13 +128,13 @@
           </li>
 
           <li class="nav-item">
-            <a href="#" class="nav-link" data-bs-toggle="modal" data-bs-target="#wishlistModal">
+            <a href="wishlist.html" class="nav-link" data-bs-toggle="modal" data-bs-target="#wishlistModal">
               <i class="bi bi-heart fs-3 px-3" title="Wishlist"></i>
             </a>
           </li>
 
           <li class="nav-item">
-            <a href="#" class="nav-link" data-bs-toggle="offcanvas" data-bs-target="#cartOffcanvas"></a>
+            <a href="cart.html" class="nav-link" data-bs-toggle="offcanvas" data-bs-target="#cartOffcanvas"></a>
             <i class="bi bi-bag fs-3" title="Shopping cart"></i>
           </li>
 
@@ -189,56 +189,48 @@
     <div class="container text-center">
       <h2 class="section-heading fw-bold mb-5">BEST SELLERS</h2>
       <p class="fs-5 text-muted">Hand-picked by thousands of fragrance lovers just like you.</p>
-
-      <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
-        <div class="carousel-indicators">
-          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
-            aria-current="true" aria-label="Slide 1"></button>
-          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
-            aria-label="Slide 2"></button>
-          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
-            aria-label="Slide 3"></button>
-        </div>
-
-        <div class="carousel-inner">
-          <div class="carousel-item active">
-            <img src="./img/ysl_transparent-removebg-preview.png" class="d-block carousel-img rounded" alt="YSL perfume"
-              loading="lazy">
-            <div class="carousel-caption-custom">
-              <p class="product-price">$165.00</p>
-            </div>
-          </div>
-
-          <div class="carousel-item">
-            <img src="./img/zara_perfume-removebg-preview.png" class="d-block carousel-img rounded" alt="Zara perfume"
-              loading="lazy">
-            <div class="carousel-caption-custom">
-              <p class="product-price">$230.00</p>
-            </div>
-          </div>
-
-          <div class="carousel-item">
-            <img src="./img/versace_eros-removebg-preview.png" class="d-block carousel-img rounded" alt="Versace Eros"
-              loading="lazy">
-            <div class="carousel-caption-custom">
-              <p class="product-price">$138.00</p>
-            </div>
-          </div>
-        </div>
-
-        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions"
-          data-bs-slide="prev">
-          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Previous</span>
-        </button>
-        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions"
-          data-bs-slide="next">
-          <span class="carousel-control-next-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Next</span>
-        </button>
-      </div>
     </div>
-  </section>
+
+    <div id="carouselExampleCaptions" class="carousel slide">
+      <div class="carousel-indicators">
+        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+      </div>
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <a href="libreintense.html"><img src="./img/libre-intense.jpg" class="d-block" alt="YSL Libre Intense"></a>
+          <!-- <div class="carousel-caption d-none d-md-block">
+            <h5>YSL Libre Intense</h5>
+            <p>$175.00</p>
+          </div> -->
+        </div>
+        <div class="carousel-item">
+          <a href="delina.html"><img src="./img/delina.jpg" class="d-block" alt="Delina"></a>
+          <!-- <div class="carousel-caption d-none d-md-block">
+            <h5>Delina</h5>
+            <p>$390.00</p>
+          </div> -->
+        </div>
+        <div class="carousel-item">
+          <a href="santal33.html"><img src="./img/santal-33.jpg" class="d-block" alt="Santal 33"></a>
+          <!-- <div class="carousel-caption d-none d-md-block">
+            <h5>Le Labo Santal 33</h5>
+            <p>$107.00</p>
+          </div> -->
+        </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>  
+   
+    </section>
 
   <!-- Category Section -->
   <section class="py-5 bg-light" id="categories">
