@@ -128,3 +128,29 @@ function removeItem(button) {
   const item = button.closest('.wishlist-item');
   item.remove();
 }
+
+document.addEventListener('DOMContentLoaded', () => {
+  const buttons = document.querySelectorAll('.wishlist-btn');
+
+  buttons.forEach(button => {
+    button.addEventListener('click', function () {
+      const perfume = {
+        id: this.dataset.id,
+        name: this.dataset.name,
+        price: this.dataset.price,
+        img: this.dataset.img
+      };
+
+      let wishlist = JSON.parse(localStorage.getItem('wishlist')) || [];
+
+      if (!wishlist.find(item => item.id === perfume.id)) {
+        wishlist.push(perfume);
+        localStorage.setItem('wishlist', JSON.stringify(wishlist));
+        alert(`${perfume.name} added to wishlist!`);
+      } else {
+        alert(`${perfume.name} is already in your wishlist.`);
+      }
+    });
+  });
+});
+

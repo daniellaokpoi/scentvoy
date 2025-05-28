@@ -174,134 +174,31 @@
   <div id="searchBar" class="d-none position-absolute w-100 bg-white p-3">
     <input type="text" id="searchBox" class="form-control" placeholder="Search perfumes..." onkeyup="filterPerfumes()">
   </div>
-
-  <!-- Hero section -->
-  <section class="container-fluid hero-section">
-    <div class="row justify-content-center">
-      <div class="col-10 col-md-8 text-center hero-content">
-        <a href="missdior.html" class="btn hero-btn mt-3 mb-5">Shop This Fragrance</a>
-      </div>
-    </div>
-  </section>
-
-  <!-- Best Sellers Section -->
-  <section class="sellers-sect py-5">
-    <div class="container text-center">
-      <h2 class="section-heading fw-bold mb-5">BEST SELLERS</h2>
-      <p class="fs-5 text-muted">Hand-picked by thousands of fragrance lovers just like you.</p>
+      
+  <div id="quizCard">
+    <!-- PROGRESS BAR -->
+    <div class="progress mb-4">
+      <div id="progressBar" class="progress-bar bg-dark" role="progressbar" style="width:0%"></div>
     </div>
 
-    <div id="carouselExampleCaptions" class="carousel slide">
-      <div class="carousel-indicators">
-        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
-        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
-      </div>
-      <div class="carousel-inner">
-        <div class="carousel-item active">
-          <a href="libreintense.html"><img src="./img/libre-intense.jpg" class="d-block" alt="YSL Libre Intense"></a>
-          <!-- <div class="carousel-caption d-none d-md-block">
-            <h5>YSL Libre Intense</h5>
-            <p>$175.00</p>
-          </div> -->
-        </div>
-        <div class="carousel-item">
-          <a href="delina.html"><img src="./img/delina.jpg" class="d-block" alt="Delina"></a>
-          <!-- <div class="carousel-caption d-none d-md-block">
-            <h5>Delina</h5>
-            <p>$390.00</p>
-          </div> -->
-        </div>
-        <div class="carousel-item">
-          <a href="santal33.html"><img src="./img/santal-33.jpg" class="d-block" alt="Santal 33"></a>
-          <!-- <div class="carousel-caption d-none d-md-block">
-            <h5>Le Labo Santal 33</h5>
-            <p>$107.00</p>
-          </div> -->
-        </div>
-      </div>
-      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
-        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-        <span class="visually-hidden">Previous</span>
-      </button>
-      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
-        <span class="carousel-control-next-icon" aria-hidden="true"></span>
-        <span class="visually-hidden">Next</span>
-      </button>
-    </div>  
-   
-    </section>
+    <!-- QUESTION AREA -->
+    <h4 id="questionTitle" class="mb-3"></h4>
+    <div id="optionContainer"></div>
 
-  <!-- Category Section -->
-  <section class="py-5 bg-light" id="categories">
-    <div class="container text-center">
-      <h2 class="mb-4 fw-semibold">Shop by Category</h2>
-      <div class="row justify-content-center g-4">
-
-        <!-- Category Card -->
-        <div class="col-6 col-sm-4 col-md-3 col-lg-2">
-          <a href="forher.html" class="text-decoration-none">
-          <div class="position-relative rounded overflow-hidden shadow-sm category-card">
-            <img src="./img/diptyque.jpg" alt="For Her" class="img-fluid w-100 category-img">
-            <div
-              class="category-label position-absolute bottom-0 start-0 w-100 text-white py-2 px-2 text-uppercase fw-semibold">
-              For Her
-            </div>
-          </div>
-        </a>
-        </div>
-
-        <!-- Repeat Cards -->
-        <div class="col-6 col-sm-4 col-md-3 col-lg-2">
-          <a href="forhim.html" class="text-decoration-none">
-          <div class="position-relative rounded overflow-hidden shadow-sm category-card">
-            <img src="./img/le labo masc.jpg" alt="For Him" class="img-fluid w-100 category-img">
-            <div
-              class="category-label position-absolute bottom-0 start-0 w-100 text-white py-2 px-2 text-uppercase fw-semibold">
-              For Him
-            </div>
-          </div>
-        </a>
-        </div>
-
-        <div class="col-6 col-sm-4 col-md-3 col-lg-2">
-          <a href="unisex.html" class="text-decoration-none">
-          <div class="position-relative rounded overflow-hidden shadow-sm category-card">
-            <img src="./img/acqua di gio.jpg" alt="Unisex" class="img-fluid w-100 category-img">
-            <div
-              class="category-label position-absolute bottom-0 start-0 w-100 text-white py-2 px-2 text-uppercase fw-semibold">
-              Unisex
-            </div>
-          </div>
-        </a>
-        </div>
-
-        <div class="col-6 col-sm-4 col-md-3 col-lg-2">
-          <a href="luxuryperfumes.html" class="text-decoration-none">
-          <div class="position-relative rounded overflow-hidden shadow-sm category-card">
-            <img src="./img/ysl perfume.jpg" alt="Luxury" class="img-fluid w-100 category-img">
-            <div
-              class="category-label position-absolute bottom-0 start-0 w-100 text-white py-2 px-2 text-uppercase fw-semibold">
-              Luxury
-            </div>
-          </div>
-        </a>
-        </div>
-
-      </div>
+    <!-- NAV BUTTONS -->
+    <div class="d-flex justify-content-between mt-3">
+      <button id="prevBtn" class="btn btn-outline-secondary" disabled>Back</button>
+      <button id="nextBtn" class="btn btn-dark">Next</button>
     </div>
-  </section>
 
-
-
-  <!-- Find Your Scent Quiz -->
-  <section class="py-5 text-center bg-dark text-white mt-5" id="scent-quiz">
-    <div class="container">
-      <h2 class="mb-3">Not Sure Where to Start?</h2>
-      <p class="mb-4 lead">Take our 60-second quiz to find your signature scent.</p>
-      <a href="quiz.html" class="btn btn-outline-light btn-lg rounded-pill px-4">Take the Quiz</a>
+    <!-- RESULT AREA -->
+    <div id="resultCard" class="mt-4">
+      <img id="resultImg" src="" alt="Perfume image">
+      <h2 id="resultName"></h2>
+      <p id="resultDesc" class="mb-1"></p>
+      <a id="shopLink" href="#" class="btn btn-dark mt-3">Shop Now</a>
     </div>
-  </section>
+  </div>
 
   <footer class="footer mt-5">
     <div class="container">
@@ -378,6 +275,7 @@
     integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
     crossorigin="anonymous"></script>
   <script src="./script.js"></script>
+  <script src="quiz.js"></script>
 </body>
 
 </html>

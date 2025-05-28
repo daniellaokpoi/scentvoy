@@ -780,3 +780,98 @@ li a {
 .btn-remove:hover {
   background: #e53935;
 }
+
+/* Quiz style */
+    #quizCard {
+    max-width:680px;
+    margin:60px auto 40px;
+    padding:40px;
+    border-radius:24px;
+    background:#ffffff;
+    box-shadow:0 12px 40px rgba(0,0,0,.08);
+   }
+
+    .btn-option {
+      width:100%;
+      margin-bottom:14px;
+      text-align:left;
+      border-radius:12px;
+      padding:14px 18px;
+      transition:.25s;
+    }
+
+    .btn-option:hover,.btn-option.active {
+      background:#f5f1ff;
+      border-color:#7c3aed;
+      color:#2e1065;
+    }
+
+    .progress {
+      height:10px;
+      border-radius:6px;
+      background:#e9ecef;
+      margin-bottom:32px;
+    }
+
+    #resultCard {
+      display:none;
+      text-align:center;
+    }
+
+    #resultCard img {
+      width:180px;
+      height:220px;
+      object-fit:cover;
+      border-radius:16px;
+      margin-bottom:20px;
+    }
+
+    #resultCard h2 {
+      font-weight:600;
+      margin-bottom:12px;
+    }
+
+    /* Cart styling */
+    .cart-card { 
+      border-radius:20px;
+      transition:.25s; 
+    }
+
+    .cart-card:hover {
+     box-shadow:0 12px 20px rgba(0,0,0,.08);
+     }
+
+    .cart-img {
+       width:100px;
+       height:120px;
+       object-fit:cover;
+       border-radius:16px;
+       }
+
+    .qty-input { 
+      width:68px;
+     }
+
+     /* Checkout styling */
+     .checkout-card {
+       border-radius: 18px; 
+      }
+
+    .checkout-container {
+       max-width: 900px;
+       margin: auto;
+       padding: 2rem 1rem;
+       }
+
+    .cart-img {
+       width: 60px;
+       height: 70px;
+       object-fit: cover;
+       border-radius: 8px; 
+      }
+
+    .thank-you {
+       display: none;
+       text-align: center;
+       padding: 3rem 1rem; 
+      }
