@@ -2,12 +2,12 @@ let shopLink = document.getElementById('shop-nav');
 let shopItems = document.getElementById('shop-drop');
 
 
-shopLink.addEventListener('mouseover', function(){
-  if (shopLink == shopItems){
+shopLink.addEventListener('mouseover', function () {
+  if (shopLink == shopItems) {
     shopItems.style.display = 'block';
-  }else {
+  } else {
     shopItems.style.display = 'none';
-    
+
   }
 })
 
@@ -17,9 +17,9 @@ let wishIcon = document.getElementById('wishlist-icon');
 
 wishBtn.forEach((wishButton) => {
   wishButton.addEventListener('click', () => {
-    if (wishIcon.style.color === 'red'){
+    if (wishIcon.style.color === 'red') {
       wishIcon.style.color = 'black';
-    }else {
+    } else {
       wishIcon.style.color = 'red';
     }
   })
@@ -45,7 +45,7 @@ if (alertTrigger) {
   alertTrigger.addEventListener('click', () => {
     appendAlert('This perfume has been added to your wishlist', 'success')
   })
-}else {
+} else {
   appendAlert('This perfume has been removed from your wishlist', 'success')
 }
 
@@ -57,47 +57,74 @@ function removeItem(button) {
   }
 }
 
- // Smooth-scroll placeholder
- function scrollToSection(id){ alert("This would scroll to section: "+id); }
+// Smooth-scroll placeholder
+function scrollToSection(id) { alert("This would scroll to section: " + id); }
 
- // Show modal with offer text
- document.querySelectorAll('.offer').forEach(el=>{
-   el.addEventListener('click',()=>{
-     document.getElementById('modalOfferText').textContent = el.textContent.trim();
-     new bootstrap.Modal(document.getElementById('offerModal')).show();
-   });
- });
+// Show modal with offer text
+// document.querySelectorAll('.offer').forEach(el => {
+//   el.addEventListener('click', () => {
+//     document.getElementById('modalOfferText').textContent = el.textContent.trim();
+//     new bootstrap.Modal(document.getElementById('offerModal')).show();
+//   });
+// });
 
-//  sign in to dashboard
- document.getElementById("loginForm").addEventListener("submit", function(event) {
-  event.preventDefault(); // Prevent default form submission
+//  document.getElementById("loginForm").addEventListener("submit", function (event) {
+//   event.preventDefault(); // Prevent default form submission
 
-  // Get input values
-  const email = document.getElementById("email").value.trim();
-  const password = document.getElementById("password").value.trim();
+//   // Get input values
+//   const email = document.getElementById("email").value.trim();
+//   const password = document.getElementById("password").value.trim();
 
-  // Simple validation
-  if (email === "" || password === "") {
-    alert("Please fill in both email and password.");
-  } else {
-    // Redirect to dashboard.html
-    window.location.href = "dashboard.html";
+//   // Simple validation
+//   if (email === "" || password === "") {
+//     alert("Please fill in both email and password.");
+//   } else {
+//     // Redirect to dashboard.html
+//     window.location.href = "dashboard.html";
+//   }
+// });
+
+document.addEventListener("DOMContentLoaded", () => {
+  // Handle modal offer click
+  document.querySelectorAll('.offer').forEach(el => {
+    el.addEventListener('click', () => {
+      document.getElementById('modalOfferText').textContent = el.textContent.trim();
+      new bootstrap.Modal(document.getElementById('offerModal')).show();
+    });
+  });
+
+  // Handle login form submission
+  const loginForm = document.getElementById("loginForm");
+
+  if (loginForm) {
+    loginForm.addEventListener("submit", function (event) {
+      event.preventDefault(); // Prevent default form submission
+
+      const email = document.getElementById("mail").value.trim(); // 'mail' not 'email'
+      const password = document.getElementById("password").value.trim();
+
+      if (email === "" || password === "") {
+        alert("Please fill in both email and password.");
+      } else {
+        window.location.href = "dashboard.html";
+      }
+    });
   }
 });
 
 // Bootstrap 'was-validated' styling helper
-function setValidationState(form, ok){
+function setValidationState(form, ok) {
   form.classList.remove('was-validated');
-  if(!ok) form.classList.add('was-validated');
+  if (!ok) form.classList.add('was-validated');
 }
 
 // registration to dashboard
 document.addEventListener('DOMContentLoaded', () => {
 
-  const form   = document.getElementById('registerForm');
-  const pass   = document.getElementById('regPass');
-  const pass2  = document.getElementById('regPassConfirm');
-  const terms  = document.getElementById('regTerms');
+  const form = document.getElementById('registerForm');
+  const pass = document.getElementById('regPass');
+  const pass2 = document.getElementById('regPassConfirm');
+  const terms = document.getElementById('regTerms');
 
   form.addEventListener('submit', e => {
     e.preventDefault();                       // stay on page for validation
@@ -154,3 +181,12 @@ document.addEventListener('DOMContentLoaded', () => {
   });
 });
 
+
+// add to cart
+const cartBtn = document.querySelectorAll('.addtocart');
+
+cartBtn.forEach(function (cartButton) {
+  cartButton.addEventListener('click', () => {
+    alert('you added this perfume to your cart.')
+  });
+});
