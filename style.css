@@ -642,6 +642,8 @@ li a {
   background-size: cover;
   height: 100vh;
   width: 100%;
+  overflow-x: hidden; /* Prevent horizontal scroll */
+
 }
 
 .family-card:hover {
@@ -876,3 +878,177 @@ li a {
        text-align: center;
        padding: 3rem 1rem; 
       }
+
+      /* Fragrance families */
+    .family-card img {
+    width: 120px;
+    height: 120px;
+    object-fit: cover;
+  }
+
+    /* Floral Note Hero */
+    .floralnote-hero {
+      background: url(./img/floral-guide.jpg);
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+      height: 100vh;
+      width: 100%;
+      overflow-x: hidden; /* Prevent horizontal scroll */
+
+    }
+
+  /* ---------- Note Cards ---------- */
+      .floral-card {
+        border: none;
+        border-radius: 1.25rem;
+        overflow: hidden;
+        transition: transform 0.4s ease, box-shadow 0.4s ease;
+      }
+      .floral-card:hover {
+        transform: translateY(-6px);
+        box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.15);
+      }
+
+      /* Note card styling */
+      .floralnote-img {
+        height: 200px;
+        object-fit: cover;
+        width: 100%;
+        border-radius: 0.5rem;
+}
+
+  /* ---------- Pyramid ---------- */
+      .floral-step {
+        padding: 0.75rem 1rem;
+        border-radius: 0.75rem;
+        background: var(--accent-light);
+        box-shadow: 0 0.4rem 0.8rem rgba(0, 0, 0, 0.05);
+      }
+
+  /* Crafting Your Signature */
+  .floral-signature-section {
+  background: linear-gradient(to right, #fdf6f9, #fff);
+  padding-top: 4rem;
+  padding-bottom: 4rem;
+}
+
+.text-gradient {
+  background: linear-gradient(90deg, #b76e79, #e0aaff);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.lead-custom {
+  font-size: 1.2rem;
+  max-width: 700px;
+  color: #5a5a5a;
+  line-height: 1.8;
+  animation: fadeIn 1.2s ease-in-out both;
+}
+
+.fade-in {
+  opacity: 0;
+  animation: fadeInUp 1s ease forwards;
+}
+
+@keyframes fadeInUp {
+  0% {
+    opacity: 0;
+    transform: translateY(15px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.woodnote-hero {
+      background: url(./img/wood-guide.jpg);
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+      height: 100vh;
+      width: 100%;
+      overflow-x: hidden; /* Prevent horizontal scroll */
+     }
+
+.woody-signature-section {
+  background: linear-gradient(to right, #f5f3ef, #e8e2db); /* Warm beige to earthy taupe */
+  padding-top: 4rem;
+  padding-bottom: 4rem;
+}
+
+.oriental-signature-section {
+  background: linear-gradient(to right, #5a3e1b, #a67c00); /* Deep amber to golden spice */
+  padding-top: 4rem;
+  padding-bottom: 4rem;
+}
+
+.oriental-gradient {
+  background: linear-gradient(90deg, #b06500, #f5a623, #a94f15);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.orientalnote-hero {
+      background: url(./img/oriental-hero.jpg);
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+      height: 100vh;
+      width: 100%;
+      overflow-x: hidden; /* Prevent horizontal scroll */
+     }
+
+.freshnote-hero {
+      background: url(./img/fresh-note.jpg);
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+      height: 100vh;
+      width: 100%;
+      overflow-x: hidden; /* Prevent horizontal scroll */
+     }
+
+  .fresh-signature-section {
+  background: linear-gradient(to right, #a0d8ef, #79c99e); /* Soft sky blue to fresh green */
+  padding-top: 4rem;
+  padding-bottom: 4rem;
+}
+
+.fresh-gradient {
+  background: linear-gradient(90deg, #289b9f, #7cc2a9, #f6f4a8);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+    .terms-container {
+      max-width: 800px;
+      margin: 0 auto;
+      background: white;
+      padding: 2rem;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+      border-radius: 8px;
+      font-family: Arial, sans-serif;
+      line-height: 1.6;
+      background-color: #f9f9f9;
+      color: #333;
+    }
+
+    .term-anchor {
+      color: #b76e79;
+      text-decoration: none;
+    }
+
+    .term-anchor:hover {
+      text-decoration: underline;
+    }
+
+    /* .privacy-list {
+      list-style-type: disc;
+      line-height: 1.5;
+    } */
+
+
+
