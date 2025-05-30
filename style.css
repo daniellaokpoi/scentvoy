@@ -40,11 +40,17 @@ p {
   left: 0;
   top: 100%;
   z-index: 1050; /* above other elements */
+  transition: opacity 0.2s ease;
+
 }
 
 .nav-item:hover #shop-drop {
   display: flex !important;
 }
+
+.dropdown-hover:hover #shop-drop {
+    display: flex !important;
+  }
 
 .dropdown-img {
   height: 150px;
@@ -501,7 +507,7 @@ li a {
 }
 
 .bold-hero {
-  background-image: url(./img/girlsnight-hero.jpg);
+  background-image: url(./img/bold-hero.jpg);
   background-position: center bottom;
   background-repeat: no-repeat;
   background-size: cover;
@@ -935,7 +941,6 @@ li a {
 
 .text-gradient {
   background: linear-gradient(90deg, #b76e79, #e0aaff);
-  -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
 
@@ -987,7 +992,6 @@ li a {
 
 .oriental-gradient {
   background: linear-gradient(90deg, #b06500, #f5a623, #a94f15);
-  -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
 
@@ -1019,7 +1023,6 @@ li a {
 
 .fresh-gradient {
   background: linear-gradient(90deg, #289b9f, #7cc2a9, #f6f4a8);
-  -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
 
@@ -1045,10 +1048,6 @@ li a {
       text-decoration: underline;
     }
 
-    /* .privacy-list {
-      list-style-type: disc;
-      line-height: 1.5;
-    } */
-
+    
 
 
