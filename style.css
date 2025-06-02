@@ -58,36 +58,6 @@ p {
   object-fit: cover;
 }
 
-@media (max-width: 768px) {
-  #shop-drop {
-    position: static !important;
-    display: none;
-    flex-direction: column;
-    width: 100%;
-    padding: 1rem;
-    background-color: white;
-    z-index: 1000;
-  }
-
-  .nav-item.dropdown.show #shop-drop {
-    display: flex !important;
-  }
-
-  .dropdown-img {
-    max-width: 100%;
-    height: auto;
-  }
-
-  #shop-drop ul {
-    padding-left: 0;
-  }
-
-  #shop-drop ul li {
-    list-style: none;
-    margin-bottom: 0.5rem;
-  }
-}
-
 
 .hero-section {
   background-image: url(./img/hero\ image\ dior.jpg);
